@@ -1,14 +1,13 @@
 import tkinter as tk
 
-
 # Create main window
 root = tk.Tk()
-root.title("Simple Container Example")
-root.geometry("300x200")
+root.title("LangStruct")
+root.geometry("700x500")
 
 # Create a Frame (the container)
-container = tk.Frame(root, bg="lightblue", padx=10, pady=10)
-container.pack(padx=20, pady=20, fill="both", expand=True)
+container = tk.Frame(root, bg="lightblue", padx=5, pady=5)
+container.pack(fill="both", expand=True, padx=5, pady=5)
 
 # Add widgets *inside* the container
 label = tk.Label(container, text="Hello inside the container!", bg="lightblue")
