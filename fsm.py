@@ -13,15 +13,15 @@ be known as theres no pattern for them
 """
 
 the following set of rules can be applied to a majority of english verbs 
-*irregular vrebs will have explicit conversion (perhaps a part two of the lesson?)*
+*irregular verbs will have explicit conversion (perhaps a part two of the lesson?)*
 
-if verb ends in: 'e'        apply: add 'd' to the end   ex: love -> loved
-if verb ends in: any vowel -'e'     apply:  + "ed" to end     ex: echo -> echoed
-if verb ends in: any vowel + "x,y,z"          apply: + "ed" to end       ex: play -> played; fix -> fixed
-if verb ends in:            apply:                      ex:
-if verb ends in:            apply:                      ex:
-if verb ends in:            apply:                      ex:
-if verb ends in:            apply:                      ex:
+if verb ends in: 'e'                                apply: add 'd' to the end           ex: love -> loved
+if verb ends in: any vowel -'e'                     apply:  + "ed" to end               ex: echo -> echoed
+if verb ends in: any vowel + "x,y,z"                apply: + "ed" to end                ex: play -> played; fix -> fixed
+if verb ends in: any cons. + "x,y,z"                apply: 'y' -> 'i' + "ed" to end     ex: cry -> cried
+if verb ends in: v + v + cons                       apply: + "ed" to end                ex: recruit -> recruited
+if verb ends in: stressed * (const. + v + const.)   apply: x2 last letter + "ed"        ex: occur -> occurred 
+if verb ends in: (unstressed) c + v + c             apply: + "ed"                       ex: happen -> happened
 """
 def logic():
     with open("word.txt", "r") as file:
