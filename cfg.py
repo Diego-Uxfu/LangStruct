@@ -4,7 +4,7 @@ from nltk.grammar import Nonterminal
 from random import choice
 
 
-class SentenceGenerator:
+class CheckSentence:
     def __init__(self):
         self.grammar = CFG.fromstring("""
             S -> NP VP
@@ -12,18 +12,26 @@ class SentenceGenerator:
             S -> NP VP NP
             S -> NP VP NP PP
 
-            NP -> Det N
-            NP -> Det Adj N
-            NP -> Adj N
-            NP -> N
-            NP -> Pronoun
+            NP -> DT NN
+            NP -> DT JJ NN
+            NP -> JJ NN
+            NP -> NN
+            NP -> PRP
 
-            VP -> V
-            VP -> V NP
-            VP -> V PP
-            VP -> V NP PP
+            VP -> VB
+            VP -> VB NP
+            VP -> VB PP
+            VP -> VB NP PP
 
-            PP -> Prep NP
+            PP -> IN NP
 
         """)
         self.parser = EarleyChartParser(self.grammar)
+
+
+    #check sentence for grammatical accuracy
+    def check(self, tag):
+        for tree in self.parser.parse(tag):
+            # if we can generate at least one parse, it's valid
+            return True
+        return False
