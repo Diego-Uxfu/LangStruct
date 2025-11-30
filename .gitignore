@@ -43,3 +43,4 @@ frontend/landing-page/next-env.d.ts
 
 # ide
 .idea
+node_modules/
