@@ -1,0 +1,83 @@
+[00:00:00.747] Server  LOG      ✓ Ready in 542ms
+[00:00:03.125] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.150] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.285] Browser WARN    Image with src "http://localhost:3000/vercel.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:03.739] Browser WARN    Image with src "http://localhost:3000/vercel.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:29.666] Server  ERROR    ⨯ Error: The default export is not a React Component in "/page"
+[00:03:29.899] Server  ERROR    ⨯ Error: The default export is not a React Component in "/page"
+[00:03:30.187] Server  ERROR    ⨯ Error: The default export is not a React Component in "/page"
+[00:03:30.456] Server  ERROR    ⨯ Error: The default export is not a React Component in "/page"
+[00:03:31.106] Server  ERROR    ⨯ Error: The default export is not a React Component in "/page"
+[00:03:31.326] Server  ERROR    ⨯ Error: The default export is not a React Component in "/page"
+[00:03:31.554] Server  ERROR    ⨯ Error: The default export is not a React Component in "/page"
+[00:03:31.771] Server  ERROR    ⨯ Error: The default export is not a React Component in "/page"
+[00:03:32.017] Server  ERROR    ⨯ Error: The default export is not a React Component in "/page"
+[00:03:32.233] Server  ERROR    ⨯ Error: The default export is not a React Component in "/page"
+[00:03:32.385] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/page"
+[00:03:32.407] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/page"
+[00:05:08.748] Browser ERROR   ./app/page.tsx:38:12
+Parsing ecmascript source code failed
+  36 |         </div>
+  37 |
+> 38 |           {*/ following is for comments/*}
+     |            ^
+  39 |         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+  40 |           <a
+  41 |             className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
+
+Expression expected
+[00:05:08.748] Browser ERROR   ./app/page.tsx:38:12
+Parsing ecmascript source code failed
+  36 |         </div>
+  37 |
+> 38 |           {*/ following is for comments/*}
+     |            ^
+  39 |         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+  40 |           <a
+  41 |             className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
+
+Expression expected
+[00:06:30.838] Server  LOG      ✓ Compiled in 22ms
+[00:06:31.213] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:31.244] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:31.746] Browser WARN    Image with src "http://localhost:3000/vercel.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:06:31.746] Browser WARN    Image with src "http://localhost:3000/vercel.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:07:37.407] Browser ERROR   ./app/page.tsx:57:35
+Parsing ecmascript source code failed
+  55 |             {/* end of button one*/}
+  56 |
+> 57 |             {/*start of button 2*/]}
+     |                                   ^
+  58 |           <a
+  59 |             className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
+  60 |             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+
+Expected '</', got ']'
+[00:07:37.738] Browser ERROR   ./app/page.tsx:57:35
+Parsing ecmascript source code failed
+  55 |             {/* end of button one*/}
+  56 |
+> 57 |             {/*start of button 2*/]}
+     |                                   ^
+  58 |           <a
+  59 |             className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
+  60 |             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+
+Expected '</', got ']'
+[00:07:52.959] Browser ERROR   ./app/page.tsx:66:33
+Parsing ecmascript source code failed
+  64 |             Sentence Completion
+  65 |           </a>
+> 66 |             {/*end of button 2*/]}
+     |                                 ^
+  67 |         </div>
+  68 |       </main>
+  69 |     </div>
+
+Expected '</', got ']'
+[00:08:16.099] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:16.229] Browser WARN    Image with src "http://localhost:3000/vercel.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:09:18.271] Server  LOG      ✓ Compiled in 17ms
+[00:09:42.762] Server  LOG      ✓ Compiled in 14ms
+[00:09:46.217] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:46.354] Browser WARN    Image with src "http://localhost:3000/vercel.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
