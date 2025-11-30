@@ -1,66 +1,104 @@
-from nltk.corpus import treebank
 import joblib
+from nltk.stem import WordNetLemmatizer
+from nltk.corpus import wordnet as wn
 
+# --- Feature Functions (Assuming word2features and sent2features are defined above) ---
+# NOTE: The feature functions must match the functions used to train pos_crf_model.pkl
+
+def get_wordnet_pos(universal_tag):
+    if universal_tag == 'ADJ': return wn.ADJ
+    elif universal_tag == 'VERB': return wn.VERB
+    elif universal_tag == 'ADV': return wn.ADV
+    return wn.NOUN
 
 def word2features(sent, i):
     word = sent[i][0]
+    word_lower = word.lower()
+    lemmatizer = WordNetLemmatizer()
+    # --- LEMMA CALCULATION (Heuristic) ---
+    # The heuristic: Check if the word changes when treated as a Verb. 
+    # If yes, use the verb lemma. Otherwise, default to the noun lemma.
+    # This captures inflections like "sleeps" -> "sleep" (Verb) but leaves "cat" -> "cat" (Noun).
+    lemma_verb = lemmatizer.lemmatize(word_lower, wn.VERB)
+    
+    if lemma_verb != word_lower:
+        lemma = lemma_verb
+    else:
+        lemma = lemmatizer.lemmatize(word_lower, wn.NOUN)
 
+    # --- Feature Dictionary (Updated) ---
     features = {
-        'bias': 1.0,
-        'word.lower()': word.lower(),
-        'word[-3:]': word[-3:],
-        'word[-2:]': word[-2:],
-        'word.isupper()': word.isupper(),
-        'word.istitle()': word.istitle(),
-        'word.isdigit()': word.isdigit(),
+        'word': word,
+        'word.lower()': word_lower,
+  
+        
+        # THE NEW LEMMA FEATURE
+        'word.lemma': lemma,  
+        'word.endswith_s': word_lower.endswith('s') and len(word_lower) > 1, # Catches the 'jumps' issue
+        'word.endswith_ed': word_lower.endswith('ed'),
+        'word.endswith_ing': word_lower.endswith('ing'),
+
+# 2-Grams
+        'char_2gram_prefix': word_lower[:2] if len(word_lower) >= 2 else '',
+        'char_2gram_suffix': word_lower[-2:] if len(word_lower) >= 2 else '',
+        
+        # 3-Grams
+        'char_3gram_prefix': word_lower[:3] if len(word_lower) >= 3 else '',
+        'char_3gram_suffix': word_lower[-3:] if len(word_lower) >= 3 else '',
+
+        #default features provided by Geeks4Geeks
+        'is_first': i == 0,
+        'is_last': i == len(sent) - 1,
+        'is_capitalized': word[0].upper() == word[0],
+        'is_all_caps': word.upper() == word,
+        'is_all_lower': word.lower() == word,
+        
+  
+        
+        # contextual features
+        'prev_word': '' if i == 0 else sent[i-1][0],
+        'next_word': '' if i == len(sent)-1 else sent[i+1][0],
+        
+        'has_hyphen': '-' in word,
+        'is_numeric': word.isdigit(),
+        'capitals_inside': word[1:].lower() != word[1:]
     }
 
-    if i > 0:
-        prev_word = sent[i-1][0]
-        features.update({
-            '-1:word.lower()': prev_word.lower(),
-            '-1:word.istitle()': prev_word.istitle(),
-            '-1:word.isupper()': prev_word.isupper(),
-        })
-    else:
-        features['BOS'] = True
-
-    if i < len(sent)-1:
-        next_word = sent[i+1][0]
-        features.update({
-            '+1:word.lower()': next_word.lower(),
-            '+1:word.istitle()': next_word.istitle(),
-            '+1:word.isupper()': next_word.isupper(),
-        })
-    else:
-        features['EOS'] = True
-
     return features
-
-
-
-#we'll send this into the cfg to determine sentence validity
+def sent2features(sent):
+    # This function must be present and identical to your training script
+    return [word2features(sent, i) for i in range(len(sent))]
 
 def tagSentence(s):
     """
-    Input: s = sentence string, e.g. "The cat sleeps"
-    Output: list of POS tags, e.g. ['DT', 'NN', 'VBZ']
+    Loads the trained CRF model and predicts the Part-of-Speech tags for the input sentence.
     """
     # Load trained CRF model
-    crf = joblib.load("pos_crf_model.pkl")
+    try:
+        crf = joblib.load("pos_crf_model.pkl") 
+    except FileNotFoundError:
+        print("Error: Model file 'pos_crf_model.pkl' not found. Please ensure the trained file is in the current directory.")
+        return []
     
     # Split string into words
-    words = s.split(" ")
+    words = s.split() 
     
-    # Create  structure for feature extraction
-    sent = []
-    for w in words:
-        sent.append((w, None))
+    # Create the structure (word, placeholder_tag) required by sent2features
+    # The tag is None/empty because we are in the prediction phase.
+    sent = [(w, None) for w in words]
         
     # Generate features for CRF
+    # The features list must be wrapped in another list because crf.predict expects 
+    # a list of sentences.
     features = sent2features(sent)
     
     # Predict POS tags
+    # crf.predict returns a list of tag sequences (one for each sentence), 
+    # so we take the first element [0] for our single sentence.
     tags = crf.predict([features])[0]
     
     return tags
+
+# --- Example Usage ---
+# If you run tagSentence("the cat sleeps"), it will return the predicted tags 
+# (e.g., ['DET', 'NOUN', 'VERB']) if the model is correctly loaded.
