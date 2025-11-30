@@ -5,7 +5,7 @@ from nltk.grammar import Nonterminal
 from random import choice
 import tagSentence
 
-# Create main window
+# Create main wi
 root = tk.Tk()
 root.title("LangStruct")
 root.geometry("700x500")
@@ -23,8 +23,6 @@ entry = tk.Entry(container, width=40)
 entry.pack(pady=5)
 entry.insert(0, "Type here...")
 
-def on_enter(event):
-    tagSentence(entry.get())
 
 # Run the application
 root.mainloop()
