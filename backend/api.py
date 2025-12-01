@@ -59,7 +59,13 @@ def analyze():
 
     # 2. Call your existing function to tag the sentence
 
-    tags = tagSentence(text)
+    tags = list(tagSentence(text))  # ensures it's a list
+    if not tags:  # now this works safely
+        return jsonify({"error": "Tagger returned no tags"}), 500
+
+    # tags = tagSentence(text)
+    # if not tags:
+    #     return jsonify({"error": "Tagger returned no tags"}), 500
 
 
     # 3. Check Validity using your CFG script
