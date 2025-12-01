@@ -8,6 +8,7 @@ from cfg import CheckSentence
 from fsm import SentenceGenerator 
 from verb_fsm import *
 from pydantic import BaseModel
+import random as rand
 app = Flask(__name__)
 CORS(app)
 
@@ -58,7 +59,7 @@ def analyze():
 
     # 2. Call your existing function to tag the sentence
 
-        tags = tagSentence(text)
+    tags = tagSentence(text)
 
 
     # 3. Check Validity using your CFG script
@@ -74,6 +75,7 @@ def analyze():
         "tags": response_tags,
         "isValid": is_valid
     })
+
 irregulars = get_irregulars()
 all_verbs = list_all_verbs()
 
@@ -83,22 +85,38 @@ class CheckRequest(BaseModel):
 
 @app.get("/random_verb")
 def random_verb():
-    verb = random.choice(all_verbs)
-    return {"verb": verb}
+    verb = rand.choice(all_verbs)
+    return jsonify({"verb": verb})
 
-@app.post("/check")
-def check_answer(request: CheckRequest):
-    verb = request.verb.lower()
-    user_input = request.user_answer.strip().lower()
+@app.route("/check", methods=["POST"])
+def check_answer():
+    data = request.json
+    verb = data.get('verb', '').lower()
+    user_input = data.get("user_answer", "").strip().lower()
+
+    if not verb or not user_input:
+        return jsonify({"error": "Missing verb or user_answer"}), 400
 
     correct = conjugate(verb, irregulars)
 
-    return {
+    return jsonify({
         "verb": verb,
         "correct_answer": correct,
         "user_answer": user_input,
         "is_correct": user_input == correct
-    }
+    })
+
+    # verb = request.verb.lower()
+    # user_input = request.user_answer.strip().lower()
+    #
+    # correct = conjugate(verb, irregulars)
+    #
+    # return {
+    #     "verb": verb,
+    #     "correct_answer": correct,
+    #     "user_answer": user_input,
+    #     "is_correct": user_input == correct
+    # }
 
 if __name__ == '__main__':
     print("Starting Flask Server on Port 5000...")
