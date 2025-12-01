@@ -57,11 +57,9 @@ def analyze():
         return jsonify({"error": "No text provided"}), 400
 
     # 2. Call your existing function to tag the sentence
-    try:
+
         tags = tagSentence(text)
-    except Exception as e:
-        print(f"Tagging Error: {e}")
-        return jsonify({"error": "Failed to tag sentence"}), 500
+
 
     # 3. Check Validity using your CFG script
     # The check method expects a list of tags
