@@ -76,6 +76,7 @@ def analyze():
         "tags": response_tags,
         "isValid": is_valid
     })
+
 irregulars = get_irregulars()
 all_verbs = list_all_verbs()
 
@@ -86,8 +87,14 @@ class CheckRequest(BaseModel):
 @app.get("/random_verb")
 
 def random_verb():
-    verb = random.choice(all_verbs)
-    return {"verb": verb}
+    verb = rand.choice(all_verbs)
+    return jsonify({"verb": verb})
+
+@app.route("/check", methods=["POST"])
+def check_answer():
+    data = request.json
+    verb = data.get('verb', '').lower()
+    user_input = data.get("user_answer", "").strip().lower()
 
 
 @app.route('/check', methods=['POST'])
