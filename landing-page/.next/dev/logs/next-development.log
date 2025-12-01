@@ -1,155 +1,1061 @@
-[00:00:01.307] Server  LOG      ✓ Ready in 933ms
-[00:00:05.967] Browser WARN    Image with src "http://localhost:3000/vercel.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:08.857] Browser ERROR   Error fetching sentence: {}
-[00:00:22.899] Browser ERROR   Error fetching sentence: {}
-[00:00:28.441] Browser ERROR   Error fetching sentence: {}
-[00:09:45.354] Browser ERROR   Error connecting to server: {}
-[00:15:32.253] Browser ERROR   unhandledRejection: TypeError: Load failed
-[00:15:40.344] Browser ERROR   unhandledRejection: TypeError: Load failed
-[00:15:41.173] Browser ERROR   unhandledRejection: TypeError: Load failed
-[00:15:45.975] Browser ERROR   unhandledRejection: TypeError: Load failed
-[00:15:46.511] Browser ERROR   unhandledRejection: TypeError: Load failed
-[00:16:56.799] Server  LOG      ✓ Compiled in 125ms
-[00:16:59.983] Server  LOG      ✓ Compiled in 25ms
-[00:17:09.248] Browser ERROR   unhandledRejection: TypeError: Load failed
-[00:17:20.151] Browser ERROR   unhandledRejection: TypeError: Load failed
-[00:17:26.352] Browser ERROR   unhandledRejection: TypeError: Load failed
-[00:17:26.744] Browser ERROR   unhandledRejection: TypeError: Load failed
-[00:19:21.066] Browser ERROR   unhandledRejection: TypeError: Load failed
-[00:19:26.706] Browser ERROR   unhandledRejection: TypeError: Load failed
-[00:19:27.153] Browser ERROR   unhandledRejection: TypeError: Load failed
-[00:19:50.443] Browser ERROR   unhandledRejection: TypeError: Load failed
-[00:19:54.097] Browser ERROR   unhandledRejection: TypeError: Load failed
-[00:19:58.189] Browser ERROR   unhandledRejection: TypeError: Load failed
-[00:19:58.744] Browser ERROR   unhandledRejection: TypeError: Load failed
-[00:23:04.508] Browser ERROR   unhandledRejection: TypeError: Load failed
-[00:26:20.842] Server  LOG      ✓ Compiled in 140ms
-[00:26:30.851] Server  LOG      ✓ Compiled in 72ms
-[00:26:32.776] Browser ERROR   unhandledRejection: TypeError: Load failed
-[00:26:46.486] Server  LOG      ✓ Compiled in 48ms
-[00:26:46.732] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx:38:40
+[00:00:01.038] Server  LOG      ✓ Ready in 666ms
+[00:00:11.009] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:11.062] Browser WARN    Image with src "http://localhost:3000/vercel.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:21.915] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:22.053] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[00:00:25.811] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[00:01:09.251] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:14.738] Browser ERROR   Error connecting to server: {}
+[00:02:05.712] Browser ERROR   Error connecting to server: {}
+[00:05:24.453] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:24.589] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[00:05:26.613] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:40.563] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:06.480] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:06.632] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
+[00:08:41.953] Server  LOG      ✓ Compiled in 204ms
+[00:08:42.704] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:26:55
 Parsing ecmascript source code failed
-  36 |       <div className="w-full max-w-5xl flex gap-8">
-  37 |
-> 38 | /* RIGHT CONTENT AREA - The Analyzer */}
-     |                                        ^
-  39 |         <div className="flex-1 flex flex-col items-center bg-white dark:bg-zinc-900
-  40 |                         rounded-xl shadow-md p-10 min-h-[600px]">
-  41 |
+  24 |   // Submit the user's answer
+  25 |   const checkAnswer = async () => {
+> 26 |     const res = await fetch("const res = await fetch("http://127.0.0.1:5000/random_verb");", {
+     |                                                       ^^^^
+  27 |       method: "POST",
+  28 |       headers: { "Content-Type": "application/json" },
+  29 |       body: JSON.stringify({
 
-Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+Expected ',', got 'http'
 
 Import traces:
   Client Component Browser:
-    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Client Component Browser]
-    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Server Component]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
 
   Client Component SSR:
-    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Client Component SSR]
-    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Server Component]
-[00:26:46.755] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx:38:40
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:42.705] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:26:55
 Parsing ecmascript source code failed
-  36 |       <div className="w-full max-w-5xl flex gap-8">
-  37 |
-> 38 | /* RIGHT CONTENT AREA - The Analyzer */}
-     |                                        ^
-  39 |         <div className="flex-1 flex flex-col items-center bg-white dark:bg-zinc-900
-  40 |                         rounded-xl shadow-md p-10 min-h-[600px]">
-  41 |
+  24 |   // Submit the user's answer
+  25 |   const checkAnswer = async () => {
+> 26 |     const res = await fetch("const res = await fetch("http://127.0.0.1:5000/random_verb");", {
+     |                                                       ^^^^
+  27 |       method: "POST",
+  28 |       headers: { "Content-Type": "application/json" },
+  29 |       body: JSON.stringify({
 
-Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+Expected ',', got 'http'
 
 Import traces:
   Client Component Browser:
-    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Client Component Browser]
-    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Server Component]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
 
   Client Component SSR:
-    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Client Component SSR]
-    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Server Component]
-[00:26:46.756] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx:38:40
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:42.706] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:26:55
 Parsing ecmascript source code failed
-  36 |       <div className="w-full max-w-5xl flex gap-8">
-  37 |
-> 38 | /* RIGHT CONTENT AREA - The Analyzer */}
-     |                                        ^
-  39 |         <div className="flex-1 flex flex-col items-center bg-white dark:bg-zinc-900
-  40 |                         rounded-xl shadow-md p-10 min-h-[600px]">
-  41 |
+  24 |   // Submit the user's answer
+  25 |   const checkAnswer = async () => {
+> 26 |     const res = await fetch("const res = await fetch("http://127.0.0.1:5000/random_verb");", {
+     |                                                       ^^^^
+  27 |       method: "POST",
+  28 |       headers: { "Content-Type": "application/json" },
+  29 |       body: JSON.stringify({
 
-Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+Expected ',', got 'http'
 
 Import traces:
   Client Component Browser:
-    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Client Component Browser]
-    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Server Component]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
 
   Client Component SSR:
-    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Client Component SSR]
-    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Server Component]
-[00:26:46.766] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx:38:40
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:42.706] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:26:55
 Parsing ecmascript source code failed
-  36 |       <div className="w-full max-w-5xl flex gap-8">
-  37 |
-> 38 | /* RIGHT CONTENT AREA - The Analyzer */}
-     |                                        ^
-  39 |         <div className="flex-1 flex flex-col items-center bg-white dark:bg-zinc-900
-  40 |                         rounded-xl shadow-md p-10 min-h-[600px]">
-  41 |
+  24 |   // Submit the user's answer
+  25 |   const checkAnswer = async () => {
+> 26 |     const res = await fetch("const res = await fetch("http://127.0.0.1:5000/random_verb");", {
+     |                                                       ^^^^
+  27 |       method: "POST",
+  28 |       headers: { "Content-Type": "application/json" },
+  29 |       body: JSON.stringify({
 
-Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+Expected ',', got 'http'
 
 Import traces:
   Client Component Browser:
-    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Client Component Browser]
-    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Server Component]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
 
   Client Component SSR:
-    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Client Component SSR]
-    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Server Component]
-[00:26:46.781] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx:38:40
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:42.706] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:26:55
 Parsing ecmascript source code failed
-  36 |       <div className="w-full max-w-5xl flex gap-8">
-  37 |
-> 38 | /* RIGHT CONTENT AREA - The Analyzer */}
-     |                                        ^
-  39 |         <div className="flex-1 flex flex-col items-center bg-white dark:bg-zinc-900
-  40 |                         rounded-xl shadow-md p-10 min-h-[600px]">
-  41 |
+  24 |   // Submit the user's answer
+  25 |   const checkAnswer = async () => {
+> 26 |     const res = await fetch("const res = await fetch("http://127.0.0.1:5000/random_verb");", {
+     |                                                       ^^^^
+  27 |       method: "POST",
+  28 |       headers: { "Content-Type": "application/json" },
+  29 |       body: JSON.stringify({
 
-Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+Expected ',', got 'http'
 
 Import traces:
   Client Component Browser:
-    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Client Component Browser]
-    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Server Component]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
 
   Client Component SSR:
-    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Client Component SSR]
-    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Server Component]
-[00:26:46.870] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx:38:40
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:43.203] Server  LOG      ✓ Compiled in 63ms
+[00:08:44.573] Server  LOG      ✓ Compiled in 65ms
+[00:08:44.702] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:27:14
 Parsing ecmascript source code failed
-  36 |       <div className="w-full max-w-5xl flex gap-8">
-  37 |
-> 38 | /* RIGHT CONTENT AREA - The Analyzer */}
-     |                                        ^
-  39 |         <div className="flex-1 flex flex-col items-center bg-white dark:bg-zinc-900
-  40 |                         rounded-xl shadow-md p-10 min-h-[600px]">
-  41 |
+  25 |   const checkAnswer = async () => {
+  26 | const res = await fetch("http://127.0.0.1:5000/random_verb");      method: "POST",
+> 27 |       headers: { "Content-Type": "application/json" },
+     |              ^
+  28 |       body: JSON.stringify({
+  29 |         verb: currentVerb,
+  30 |         user_answer: text,
 
-Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+Expected ';', '}' or <eof>
 
 Import traces:
   Client Component Browser:
-    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Client Component Browser]
-    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Server Component]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
 
   Client Component SSR:
-    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Client Component SSR]
-    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Server Component]
-[00:26:47.908] Server  LOG      ✓ Compiled in 23ms
-[00:26:50.096] Server  LOG      ✓ Compiled in 36ms
-[00:26:54.956] Server  LOG      ✓ Compiled in 13ms
-[00:29:59.566] Browser ERROR   unhandledRejection: TypeError: Load failed
-[00:30:02.759] Browser ERROR   unhandledRejection: TypeError: Load failed
-[05:48:04.368] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:44.702] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:27:14
+Parsing ecmascript source code failed
+  25 |   const checkAnswer = async () => {
+  26 | const res = await fetch("http://127.0.0.1:5000/random_verb");      method: "POST",
+> 27 |       headers: { "Content-Type": "application/json" },
+     |              ^
+  28 |       body: JSON.stringify({
+  29 |         verb: currentVerb,
+  30 |         user_answer: text,
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:44.703] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:27:14
+Parsing ecmascript source code failed
+  25 |   const checkAnswer = async () => {
+  26 | const res = await fetch("http://127.0.0.1:5000/random_verb");      method: "POST",
+> 27 |       headers: { "Content-Type": "application/json" },
+     |              ^
+  28 |       body: JSON.stringify({
+  29 |         verb: currentVerb,
+  30 |         user_answer: text,
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:44.703] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:27:14
+Parsing ecmascript source code failed
+  25 |   const checkAnswer = async () => {
+  26 | const res = await fetch("http://127.0.0.1:5000/random_verb");      method: "POST",
+> 27 |       headers: { "Content-Type": "application/json" },
+     |              ^
+  28 |       body: JSON.stringify({
+  29 |         verb: currentVerb,
+  30 |         user_answer: text,
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:44.703] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:27:14
+Parsing ecmascript source code failed
+  25 |   const checkAnswer = async () => {
+  26 | const res = await fetch("http://127.0.0.1:5000/random_verb");      method: "POST",
+> 27 |       headers: { "Content-Type": "application/json" },
+     |              ^
+  28 |       body: JSON.stringify({
+  29 |         verb: currentVerb,
+  30 |         user_answer: text,
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:46.603] Server  LOG      ✓ Compiled in 53ms
+[00:08:47.817] Server  LOG      ✓ Compiled in 123ms
+[00:08:48.725] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:27:14
+Parsing ecmascript source code failed
+  25 |   const checkAnswer = async () => {
+  26 | const res = await fetch("http://127.0.0.1:5000/random_verb");      method: "POST",
+> 27 |       headers: { "Content-Type": "application/json" },
+     |              ^
+  28 |       body: JSON.stringify({
+  29 |         verb: currentVerb,
+  30 |         user_answer: text,
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:48.735] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:27:14
+Parsing ecmascript source code failed
+  25 |   const checkAnswer = async () => {
+  26 | const res = await fetch("http://127.0.0.1:5000/random_verb");      method: "POST",
+> 27 |       headers: { "Content-Type": "application/json" },
+     |              ^
+  28 |       body: JSON.stringify({
+  29 |         verb: currentVerb,
+  30 |         user_answer: text,
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:48.735] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:27:14
+Parsing ecmascript source code failed
+  25 |   const checkAnswer = async () => {
+  26 | const res = await fetch("http://127.0.0.1:5000/random_verb");      method: "POST",
+> 27 |       headers: { "Content-Type": "application/json" },
+     |              ^
+  28 |       body: JSON.stringify({
+  29 |         verb: currentVerb,
+  30 |         user_answer: text,
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:48.736] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:27:14
+Parsing ecmascript source code failed
+  25 |   const checkAnswer = async () => {
+  26 | const res = await fetch("http://127.0.0.1:5000/random_verb");      method: "POST",
+> 27 |       headers: { "Content-Type": "application/json" },
+     |              ^
+  28 |       body: JSON.stringify({
+  29 |         verb: currentVerb,
+  30 |         user_answer: text,
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:48.737] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:27:14
+Parsing ecmascript source code failed
+  25 |   const checkAnswer = async () => {
+  26 | const res = await fetch("http://127.0.0.1:5000/random_verb");      method: "POST",
+> 27 |       headers: { "Content-Type": "application/json" },
+     |              ^
+  28 |       body: JSON.stringify({
+  29 |         verb: currentVerb,
+  30 |         user_answer: text,
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:49.701] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:28:14
+Parsing ecmascript source code failed
+  26 | const res = await fetch("http://127.0.0.1:5000/random_verb"); 
+  27 |      method: "POST",
+> 28 |       headers: { "Content-Type": "application/json" },
+     |              ^
+  29 |       body: JSON.stringify({
+  30 |         verb: currentVerb,
+  31 |         user_answer: text,
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:49.701] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:28:14
+Parsing ecmascript source code failed
+  26 | const res = await fetch("http://127.0.0.1:5000/random_verb"); 
+  27 |      method: "POST",
+> 28 |       headers: { "Content-Type": "application/json" },
+     |              ^
+  29 |       body: JSON.stringify({
+  30 |         verb: currentVerb,
+  31 |         user_answer: text,
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:49.702] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:28:14
+Parsing ecmascript source code failed
+  26 | const res = await fetch("http://127.0.0.1:5000/random_verb"); 
+  27 |      method: "POST",
+> 28 |       headers: { "Content-Type": "application/json" },
+     |              ^
+  29 |       body: JSON.stringify({
+  30 |         verb: currentVerb,
+  31 |         user_answer: text,
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:49.702] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:28:14
+Parsing ecmascript source code failed
+  26 | const res = await fetch("http://127.0.0.1:5000/random_verb"); 
+  27 |      method: "POST",
+> 28 |       headers: { "Content-Type": "application/json" },
+     |              ^
+  29 |       body: JSON.stringify({
+  30 |         verb: currentVerb,
+  31 |         user_answer: text,
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:49.702] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:28:14
+Parsing ecmascript source code failed
+  26 | const res = await fetch("http://127.0.0.1:5000/random_verb"); 
+  27 |      method: "POST",
+> 28 |       headers: { "Content-Type": "application/json" },
+     |              ^
+  29 |       body: JSON.stringify({
+  30 |         verb: currentVerb,
+  31 |         user_answer: text,
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:53.704] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:28:14
+Parsing ecmascript source code failed
+  26 | const res = await fetch("http://127.0.0.1:5000/random_verb"); 
+  27 |      method: "POST",
+> 28 |       headers: { "Content-Type": "application/json" },
+     |              ^
+  29 |       body: JSON.stringify({
+  30 |         verb: currentVerb,
+  31 |         user_answer: text,
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:53.705] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:28:14
+Parsing ecmascript source code failed
+  26 | const res = await fetch("http://127.0.0.1:5000/random_verb"); 
+  27 |      method: "POST",
+> 28 |       headers: { "Content-Type": "application/json" },
+     |              ^
+  29 |       body: JSON.stringify({
+  30 |         verb: currentVerb,
+  31 |         user_answer: text,
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:53.705] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:28:14
+Parsing ecmascript source code failed
+  26 | const res = await fetch("http://127.0.0.1:5000/random_verb"); 
+  27 |      method: "POST",
+> 28 |       headers: { "Content-Type": "application/json" },
+     |              ^
+  29 |       body: JSON.stringify({
+  30 |         verb: currentVerb,
+  31 |         user_answer: text,
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:53.705] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:28:14
+Parsing ecmascript source code failed
+  26 | const res = await fetch("http://127.0.0.1:5000/random_verb"); 
+  27 |      method: "POST",
+> 28 |       headers: { "Content-Type": "application/json" },
+     |              ^
+  29 |       body: JSON.stringify({
+  30 |         verb: currentVerb,
+  31 |         user_answer: text,
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:53.705] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:28:14
+Parsing ecmascript source code failed
+  26 | const res = await fetch("http://127.0.0.1:5000/random_verb"); 
+  27 |      method: "POST",
+> 28 |       headers: { "Content-Type": "application/json" },
+     |              ^
+  29 |       body: JSON.stringify({
+  30 |         verb: currentVerb,
+  31 |         user_answer: text,
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:54.716] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:28:14
+Parsing ecmascript source code failed
+  26 |   const res = await fetch("http://127.0.0.1:5000/random_verb"); 
+  27 |      method: "POST",
+> 28 |       headers: { "Content-Type": "application/json" },
+     |              ^
+  29 |       body: JSON.stringify({
+  30 |         verb: currentVerb,
+  31 |         user_answer: text,
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:54.716] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:28:14
+Parsing ecmascript source code failed
+  26 |   const res = await fetch("http://127.0.0.1:5000/random_verb"); 
+  27 |      method: "POST",
+> 28 |       headers: { "Content-Type": "application/json" },
+     |              ^
+  29 |       body: JSON.stringify({
+  30 |         verb: currentVerb,
+  31 |         user_answer: text,
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:54.716] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:28:14
+Parsing ecmascript source code failed
+  26 |   const res = await fetch("http://127.0.0.1:5000/random_verb"); 
+  27 |      method: "POST",
+> 28 |       headers: { "Content-Type": "application/json" },
+     |              ^
+  29 |       body: JSON.stringify({
+  30 |         verb: currentVerb,
+  31 |         user_answer: text,
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:54.716] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:28:14
+Parsing ecmascript source code failed
+  26 |   const res = await fetch("http://127.0.0.1:5000/random_verb"); 
+  27 |      method: "POST",
+> 28 |       headers: { "Content-Type": "application/json" },
+     |              ^
+  29 |       body: JSON.stringify({
+  30 |         verb: currentVerb,
+  31 |         user_answer: text,
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:08:54.716] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:28:14
+Parsing ecmascript source code failed
+  26 |   const res = await fetch("http://127.0.0.1:5000/random_verb"); 
+  27 |      method: "POST",
+> 28 |       headers: { "Content-Type": "application/json" },
+     |              ^
+  29 |       body: JSON.stringify({
+  30 |         verb: currentVerb,
+  31 |         user_answer: text,
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:09:03.474] Server  LOG      ✓ Compiled in 173ms
+[00:09:08.799] Server  LOG      ✓ Compiled in 95ms
+[00:09:09.702] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:26:66
+Parsing ecmascript source code failed
+  24 |   // Submit the user's answer
+  25 |   const checkAnswer = async () => {
+> 26 |     const res = await fetch("http://127.0.0.1:5000/random_verb");, {
+     |                                                                  ^
+  27 |       method: "POST",
+  28 |       headers: { "Content-Type": "application/json" },
+  29 |       body: JSON.stringify({
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:09:09.702] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:26:66
+Parsing ecmascript source code failed
+  24 |   // Submit the user's answer
+  25 |   const checkAnswer = async () => {
+> 26 |     const res = await fetch("http://127.0.0.1:5000/random_verb");, {
+     |                                                                  ^
+  27 |       method: "POST",
+  28 |       headers: { "Content-Type": "application/json" },
+  29 |       body: JSON.stringify({
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:09:09.703] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:26:66
+Parsing ecmascript source code failed
+  24 |   // Submit the user's answer
+  25 |   const checkAnswer = async () => {
+> 26 |     const res = await fetch("http://127.0.0.1:5000/random_verb");, {
+     |                                                                  ^
+  27 |       method: "POST",
+  28 |       headers: { "Content-Type": "application/json" },
+  29 |       body: JSON.stringify({
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:09:09.703] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:26:66
+Parsing ecmascript source code failed
+  24 |   // Submit the user's answer
+  25 |   const checkAnswer = async () => {
+> 26 |     const res = await fetch("http://127.0.0.1:5000/random_verb");, {
+     |                                                                  ^
+  27 |       method: "POST",
+  28 |       headers: { "Content-Type": "application/json" },
+  29 |       body: JSON.stringify({
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:09:09.703] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:26:66
+Parsing ecmascript source code failed
+  24 |   // Submit the user's answer
+  25 |   const checkAnswer = async () => {
+> 26 |     const res = await fetch("http://127.0.0.1:5000/random_verb");, {
+     |                                                                  ^
+  27 |       method: "POST",
+  28 |       headers: { "Content-Type": "application/json" },
+  29 |       body: JSON.stringify({
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:09:09.998] Server  LOG      ✓ Compiled in 147ms
+[00:09:10.714] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:27:15
+Parsing ecmascript source code failed
+  25 |   const checkAnswer = async () => {
+  26 |     const res = await fetch("http://127.0.0.1:5000/random_verb"), {
+> 27 |       method: "POST",
+     |               ^^^^^^
+  28 |       headers: { "Content-Type": "application/json" },
+  29 |       body: JSON.stringify({
+  30 |         verb: currentVerb,
+
+Unexpected token `string literal (POST, "POST")`. Expected yield, an identifier, [ or {
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:09:10.715] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:27:15
+Parsing ecmascript source code failed
+  25 |   const checkAnswer = async () => {
+  26 |     const res = await fetch("http://127.0.0.1:5000/random_verb"), {
+> 27 |       method: "POST",
+     |               ^^^^^^
+  28 |       headers: { "Content-Type": "application/json" },
+  29 |       body: JSON.stringify({
+  30 |         verb: currentVerb,
+
+Unexpected token `string literal (POST, "POST")`. Expected yield, an identifier, [ or {
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:09:10.715] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:27:15
+Parsing ecmascript source code failed
+  25 |   const checkAnswer = async () => {
+  26 |     const res = await fetch("http://127.0.0.1:5000/random_verb"), {
+> 27 |       method: "POST",
+     |               ^^^^^^
+  28 |       headers: { "Content-Type": "application/json" },
+  29 |       body: JSON.stringify({
+  30 |         verb: currentVerb,
+
+Unexpected token `string literal (POST, "POST")`. Expected yield, an identifier, [ or {
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:09:10.715] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:27:15
+Parsing ecmascript source code failed
+  25 |   const checkAnswer = async () => {
+  26 |     const res = await fetch("http://127.0.0.1:5000/random_verb"), {
+> 27 |       method: "POST",
+     |               ^^^^^^
+  28 |       headers: { "Content-Type": "application/json" },
+  29 |       body: JSON.stringify({
+  30 |         verb: currentVerb,
+
+Unexpected token `string literal (POST, "POST")`. Expected yield, an identifier, [ or {
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:09:10.715] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:27:15
+Parsing ecmascript source code failed
+  25 |   const checkAnswer = async () => {
+  26 |     const res = await fetch("http://127.0.0.1:5000/random_verb"), {
+> 27 |       method: "POST",
+     |               ^^^^^^
+  28 |       headers: { "Content-Type": "application/json" },
+  29 |       body: JSON.stringify({
+  30 |         verb: currentVerb,
+
+Unexpected token `string literal (POST, "POST")`. Expected yield, an identifier, [ or {
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:09:11.712] Server  LOG      ✓ Compiled in 34ms
+[00:09:12.699] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:26:66
+Parsing ecmascript source code failed
+  24 |   // Submit the user's answer
+  25 |   const checkAnswer = async () => {
+> 26 |     const res = await fetch("http://127.0.0.1:5000/random_verb") {
+     |                                                                  ^
+  27 |       method: "POST",
+  28 |       headers: { "Content-Type": "application/json" },
+  29 |       body: JSON.stringify({
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:09:12.699] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:26:66
+Parsing ecmascript source code failed
+  24 |   // Submit the user's answer
+  25 |   const checkAnswer = async () => {
+> 26 |     const res = await fetch("http://127.0.0.1:5000/random_verb") {
+     |                                                                  ^
+  27 |       method: "POST",
+  28 |       headers: { "Content-Type": "application/json" },
+  29 |       body: JSON.stringify({
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:09:12.699] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:26:66
+Parsing ecmascript source code failed
+  24 |   // Submit the user's answer
+  25 |   const checkAnswer = async () => {
+> 26 |     const res = await fetch("http://127.0.0.1:5000/random_verb") {
+     |                                                                  ^
+  27 |       method: "POST",
+  28 |       headers: { "Content-Type": "application/json" },
+  29 |       body: JSON.stringify({
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:09:12.700] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:26:66
+Parsing ecmascript source code failed
+  24 |   // Submit the user's answer
+  25 |   const checkAnswer = async () => {
+> 26 |     const res = await fetch("http://127.0.0.1:5000/random_verb") {
+     |                                                                  ^
+  27 |       method: "POST",
+  28 |       headers: { "Content-Type": "application/json" },
+  29 |       body: JSON.stringify({
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:09:12.700] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:26:66
+Parsing ecmascript source code failed
+  24 |   // Submit the user's answer
+  25 |   const checkAnswer = async () => {
+> 26 |     const res = await fetch("http://127.0.0.1:5000/random_verb") {
+     |                                                                  ^
+  27 |       method: "POST",
+  28 |       headers: { "Content-Type": "application/json" },
+  29 |       body: JSON.stringify({
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:09:13.796] Server  LOG      ✓ Compiled in 23ms
+[00:09:14.709] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:26:66
+Parsing ecmascript source code failed
+  24 |   // Submit the user's answer
+  25 |   const checkAnswer = async () => {
+> 26 |     const res = await fetch("http://127.0.0.1:5000/random_verb");, {
+     |                                                                  ^
+  27 |       method: "POST",
+  28 |       headers: { "Content-Type": "application/json" },
+  29 |       body: JSON.stringify({
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:09:14.710] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:26:66
+Parsing ecmascript source code failed
+  24 |   // Submit the user's answer
+  25 |   const checkAnswer = async () => {
+> 26 |     const res = await fetch("http://127.0.0.1:5000/random_verb");, {
+     |                                                                  ^
+  27 |       method: "POST",
+  28 |       headers: { "Content-Type": "application/json" },
+  29 |       body: JSON.stringify({
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:09:14.710] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:26:66
+Parsing ecmascript source code failed
+  24 |   // Submit the user's answer
+  25 |   const checkAnswer = async () => {
+> 26 |     const res = await fetch("http://127.0.0.1:5000/random_verb");, {
+     |                                                                  ^
+  27 |       method: "POST",
+  28 |       headers: { "Content-Type": "application/json" },
+  29 |       body: JSON.stringify({
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:09:14.711] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:26:66
+Parsing ecmascript source code failed
+  24 |   // Submit the user's answer
+  25 |   const checkAnswer = async () => {
+> 26 |     const res = await fetch("http://127.0.0.1:5000/random_verb");, {
+     |                                                                  ^
+  27 |       method: "POST",
+  28 |       headers: { "Content-Type": "application/json" },
+  29 |       body: JSON.stringify({
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:09:14.711] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx:26:66
+Parsing ecmascript source code failed
+  24 |   // Submit the user's answer
+  25 |   const checkAnswer = async () => {
+> 26 |     const res = await fetch("http://127.0.0.1:5000/random_verb");, {
+     |                                                                  ^
+  27 |       method: "POST",
+  28 |       headers: { "Content-Type": "application/json" },
+  29 |       body: JSON.stringify({
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx [Server Component]
+[00:09:15.046] Server  LOG      ✓ Compiled in 53ms
+[00:09:19.545] Server  LOG      ✓ Compiled in 52ms
+[00:10:19.271] Server  LOG      ✓ Compiled in 117ms
+[00:10:28.366] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:33.932] Browser ERROR   Error checking answer: {}
+[00:15:26.837] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:29.794] Browser ERROR   Error checking answer: {}
+[00:15:31.236] Browser ERROR   Error checking answer: {}
+[00:19:19.809] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:23.778] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <div> p 
+
+  ...
+    <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+      <LoadingBoundary name="verb_lesson/" loading={null}>
+        <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <InnerLayoutRouter url="/verb_lesson" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+                <SegmentViewNode type="page" pagePath="/projectnl...">
+                  <SegmentTrieNode>
+                  <ClientPageRoot Component={function VerbLessonPage} serverProvidedParams={{...}}>
+                    <VerbLessonPage params={Promise} searchParams={Promise}>
+                      <div className="min-h-scre...">
+                        <div className="w-full max...">
+                          <div>
+                          <div className="flex-1 fle...">
+                            <h1>
+                            <p>
+                            <div>
+                            <div className="mt-8 p-4 r...">
+>                             <p className="text-xl font-bold">
+>                               <div className="flex flex-col">
+                ...
+              ...
+

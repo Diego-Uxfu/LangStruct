@@ -17,13 +17,20 @@ function VerbLessonPage() {
     const [currentVerb, setCurrentVerb] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [text, setText] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [result, setResult] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    // Use 127.0.0.1 to avoid localhost resolution issues on Mac
+    const API_BASE = "http://127.0.0.1:5000";
     // Fetch a new random verb
     const loadVerb = async ()=>{
-        const res = await fetch("http://localhost:5000/random_verb");
-        const data = await res.json();
-        setCurrentVerb(data.verb);
-        setText("");
-        setResult(null);
+        try {
+            const res = await fetch(`${API_BASE}/random_verb`);
+            if (!res.ok) throw new Error("Failed to fetch verb");
+            const data = await res.json();
+            setCurrentVerb(data.verb);
+            setText("");
+            setResult(null);
+        } catch (error) {
+            console.error("Error loading verb:", error);
+        }
     };
     // Load first verb on page load
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
@@ -33,20 +40,33 @@ function VerbLessonPage() {
     }["VerbLessonPage.useEffect"], []);
     // Submit the user's answer
     const checkAnswer = async ()=>{
-        const res = await fetch("http://localhost:5000/check", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                verb: currentVerb,
-                user_answer: text
-            })
-        });
-        const data = await res.json();
-        setResult(data);
-        // Automatically load next verb after 2 seconds
-        setTimeout(()=>loadVerb(), 2000);
+        if (!text) return; // Don't submit empty answers
+        try {
+            // FIX: Changed endpoint from /random_verb to /check
+            const res = await fetch(`${API_BASE}/check`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    verb: currentVerb,
+                    user_answer: text
+                })
+            });
+            if (!res.ok) throw new Error("Failed to check answer");
+            const data = await res.json();
+            setResult(data);
+            // Automatically load next verb after 2 seconds if correct (optional UX choice)
+            // or just wait for user to click next.
+            // Uncomment below if you want auto-advance on correct answer only:
+            // if (data.is_correct) {
+            //   setTimeout(() => loadVerb(), 1500);
+            // }
+            // Current behavior: Auto advance regardless of result
+            setTimeout(()=>loadVerb(), 2000);
+        } catch (error) {
+            console.error("Error checking answer:", error);
+        }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "min-h-screen flex items-center justify-center bg-zinc-50 dark:bg-black px-6",
@@ -61,7 +81,7 @@ function VerbLessonPage() {
                             children: "Verb Rules (Regular Past Tense)"
                         }, void 0, false, {
                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                            lineNumber: 50,
+                            lineNumber: 75,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -76,18 +96,18 @@ function VerbLessonPage() {
                                                     children: "e"
                                                 }, void 0, false, {
                                                     fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                                    lineNumber: 56,
+                                                    lineNumber: 80,
                                                     columnNumber: 42
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 56,
+                                            lineNumber: 80,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 56,
+                                            lineNumber: 80,
                                             columnNumber: 65
                                         }, this),
                                         "→ Add ",
@@ -95,25 +115,25 @@ function VerbLessonPage() {
                                             children: "d"
                                         }, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 56,
+                                            lineNumber: 80,
                                             columnNumber: 76
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 56,
+                                            lineNumber: 80,
                                             columnNumber: 90
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
                                             children: "love → loved"
                                         }, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 56,
+                                            lineNumber: 80,
                                             columnNumber: 95
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                    lineNumber: 56,
+                                    lineNumber: 80,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -125,18 +145,18 @@ function VerbLessonPage() {
                                                     children: "e"
                                                 }, void 0, false, {
                                                     fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                                    lineNumber: 57,
+                                                    lineNumber: 81,
                                                     columnNumber: 59
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 57,
+                                            lineNumber: 81,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 57,
+                                            lineNumber: 81,
                                             columnNumber: 82
                                         }, this),
                                         "→ Add ",
@@ -144,25 +164,25 @@ function VerbLessonPage() {
                                             children: "ed"
                                         }, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 57,
+                                            lineNumber: 81,
                                             columnNumber: 93
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 57,
+                                            lineNumber: 81,
                                             columnNumber: 108
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
                                             children: "echo → echoed"
                                         }, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 57,
+                                            lineNumber: 81,
                                             columnNumber: 113
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                    lineNumber: 57,
+                                    lineNumber: 81,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -171,12 +191,12 @@ function VerbLessonPage() {
                                             children: "vowel + x/y/z"
                                         }, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 58,
+                                            lineNumber: 82,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 58,
+                                            lineNumber: 82,
                                             columnNumber: 47
                                         }, this),
                                         "→ Add ",
@@ -184,25 +204,25 @@ function VerbLessonPage() {
                                             children: "ed"
                                         }, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 58,
+                                            lineNumber: 82,
                                             columnNumber: 58
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 58,
+                                            lineNumber: 82,
                                             columnNumber: 73
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
                                             children: "play → played"
                                         }, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 58,
+                                            lineNumber: 82,
                                             columnNumber: 78
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                    lineNumber: 58,
+                                    lineNumber: 82,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -211,31 +231,31 @@ function VerbLessonPage() {
                                             children: "consonant + y"
                                         }, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 59,
+                                            lineNumber: 83,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 59,
+                                            lineNumber: 83,
                                             columnNumber: 47
                                         }, this),
                                         "→ y → i + ed",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 59,
+                                            lineNumber: 83,
                                             columnNumber: 64
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
                                             children: "cry → cried"
                                         }, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 59,
+                                            lineNumber: 83,
                                             columnNumber: 69
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                    lineNumber: 59,
+                                    lineNumber: 83,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -244,31 +264,31 @@ function VerbLessonPage() {
                                             children: "vowel + vowel + consonant"
                                         }, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 60,
+                                            lineNumber: 84,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 60,
+                                            lineNumber: 84,
                                             columnNumber: 59
                                         }, this),
                                         "→ +ed",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 60,
+                                            lineNumber: 84,
                                             columnNumber: 69
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
                                             children: "recruit → recruited"
                                         }, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 60,
+                                            lineNumber: 84,
                                             columnNumber: 74
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                    lineNumber: 60,
+                                    lineNumber: 84,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -277,31 +297,31 @@ function VerbLessonPage() {
                                             children: "stressed CVC"
                                         }, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 61,
+                                            lineNumber: 85,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 61,
+                                            lineNumber: 85,
                                             columnNumber: 46
                                         }, this),
                                         "→ double + ed",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 61,
+                                            lineNumber: 85,
                                             columnNumber: 64
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
                                             children: "occur → occurred"
                                         }, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 61,
+                                            lineNumber: 85,
                                             columnNumber: 69
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                    lineNumber: 61,
+                                    lineNumber: 85,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -310,43 +330,43 @@ function VerbLessonPage() {
                                             children: "unstressed CVC"
                                         }, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 62,
+                                            lineNumber: 86,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 62,
+                                            lineNumber: 86,
                                             columnNumber: 48
                                         }, this),
                                         "→ +ed",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 62,
+                                            lineNumber: 86,
                                             columnNumber: 58
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
                                             children: "happen → happened"
                                         }, void 0, false, {
                                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                            lineNumber: 62,
+                                            lineNumber: 86,
                                             columnNumber: 63
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                    lineNumber: 62,
+                                    lineNumber: 86,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                            lineNumber: 55,
+                            lineNumber: 79,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                    lineNumber: 47,
+                    lineNumber: 72,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -357,7 +377,7 @@ function VerbLessonPage() {
                             children: "Verb Forms Lesson"
                         }, void 0, false, {
                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                            lineNumber: 70,
+                            lineNumber: 94,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -365,79 +385,119 @@ function VerbLessonPage() {
                             children: [
                                 "Conjugate the verb: ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "font-bold",
+                                    className: "font-bold text-blue-600 dark:text-blue-400",
                                     children: currentVerb || "Loading..."
                                 }, void 0, false, {
                                     fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                    lineNumber: 76,
+                                    lineNumber: 100,
                                     columnNumber: 33
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                            lineNumber: 75,
+                            lineNumber: 99,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                            type: "text",
-                            value: text,
-                            onChange: (e)=>setText(e.target.value),
-                            placeholder: "Type past form here...",
-                            className: "w-full max-w-md p-4 border border-gray-300 dark:border-zinc-700   rounded-lg text-black dark:text-white bg-white dark:bg-zinc-800   focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        }, void 0, false, {
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex gap-2 w-full max-w-md",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                    type: "text",
+                                    value: text,
+                                    onChange: (e)=>setText(e.target.value),
+                                    onKeyDown: (e)=>e.key === 'Enter' && checkAnswer(),
+                                    placeholder: "Type past form here...",
+                                    className: "flex-1 p-4 border border-gray-300 dark:border-zinc-700   rounded-lg text-black dark:text-white bg-white dark:bg-zinc-800   focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                }, void 0, false, {
+                                    fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
+                                    lineNumber: 105,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: checkAnswer,
+                                    className: "px-6 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 font-semibold",
+                                    children: "Submit"
+                                }, void 0, false, {
+                                    fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
+                                    lineNumber: 117,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                            lineNumber: 80,
+                            lineNumber: 104,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            onClick: checkAnswer,
-                            className: "mt-4 px-6 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700",
-                            children: "Submit"
-                        }, void 0, false, {
-                            fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                            lineNumber: 91,
-                            columnNumber: 11
-                        }, this),
-                        result && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "mt-6 text-2xl font-semibold",
-                            children: result.is_correct ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-green-600",
-                                children: "Correct!"
+                        result && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: `mt-8 p-4 rounded-lg border w-full max-w-md text-center ${result.is_correct ? "bg-green-50 border-green-200 dark:bg-green-900/20 dark:border-green-800" : "bg-red-50 border-red-200 dark:bg-red-900/20 dark:border-red-800"}`,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-xl font-bold",
+                                children: result.is_correct ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "text-green-700 dark:text-green-400",
+                                    children: "Correct!"
+                                }, void 0, false, {
+                                    fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
+                                    lineNumber: 134,
+                                    columnNumber: 19
+                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex flex-col",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-red-700 dark:text-red-400 mb-1",
+                                            children: "Incorrect"
+                                        }, void 0, false, {
+                                            fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
+                                            lineNumber: 137,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-sm text-zinc-600 dark:text-zinc-400",
+                                            children: [
+                                                "The correct answer is: ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                    children: result.correct_answer
+                                                }, void 0, false, {
+                                                    fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
+                                                    lineNumber: 139,
+                                                    columnNumber: 46
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
+                                            lineNumber: 138,
+                                            columnNumber: 21
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
+                                    lineNumber: 136,
+                                    columnNumber: 19
+                                }, this)
                             }, void 0, false, {
                                 fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                lineNumber: 102,
-                                columnNumber: 17
-                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-red-600",
-                                children: [
-                                    "Incorrect — correct answer: ",
-                                    result.correct_answer
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                                lineNumber: 104,
-                                columnNumber: 17
+                                lineNumber: 132,
+                                columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                            lineNumber: 100,
+                            lineNumber: 127,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-                    lineNumber: 67,
+                    lineNumber: 91,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-            lineNumber: 44,
+            lineNumber: 69,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/projectnlp/LangStruct/landing-page/app/verb_lesson/page.tsx",
-        lineNumber: 43,
+        lineNumber: 68,
         columnNumber: 5
     }, this);
 }

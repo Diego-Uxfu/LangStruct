@@ -4,7 +4,7 @@ from flask_cors import CORS
 # --- IMPORT YOUR SCRIPTS ---
 from tagSentence import tagSentence 
 from cfg import CheckSentence
-# Import your FSM Generator
+
 from fsm import SentenceGenerator 
 from verb_fsm import *
 from pydantic import BaseModel
@@ -34,7 +34,6 @@ def generate_sentence():
         if hasattr(generator, 'generate_data'):
             words = generator.generate_data()
         else:
-            # Fallback if you didn't update fsm_implementation.py yet
             sentence_str = generator.generate()
             # Remove period and split
             words = sentence_str.replace('.', '').split()
@@ -59,7 +58,7 @@ def analyze():
 
     # 2. Call your existing function to tag the sentence
 
-        tags = tagSentence(text)
+    tags = tagSentence(text)
 
 
     # 3. Check Validity using your CFG script
@@ -88,19 +87,34 @@ def random_verb():
     verb = random.choice(all_verbs)
     return {"verb": verb}
 
-@app.post("/check")
-def check_answer(request: CheckRequest):
-    verb = request.verb.lower()
-    user_input = request.user_answer.strip().lower()
 
+@app.route('/check', methods=['POST'])
+def check_answer():
+    # 1. Parse Data MANUALLY from Flask's global request object
+    try:
+        # We pass request.json into the Pydantic model here
+        data = CheckRequest(**request.json)
+    except ValidationError as e:
+        return jsonify(e.errors()), 400
+    except TypeError:
+        return jsonify({"error": "Invalid JSON or missing body"}), 400
+
+    # 2. Logic
+    verb = data.verb.lower()
+    user_input = data.user_answer.strip().lower()
     correct = conjugate(verb, irregulars)
+    print(correct)
+    correct = correct.strip().strip('"').strip("'").strip(',').strip().strip('"')
+    correct.lower()
+    print(user_input+ " " + correct)
 
-    return {
+    # 3. Response
+    return jsonify({
         "verb": verb,
         "correct_answer": correct,
         "user_answer": user_input,
         "is_correct": user_input == correct
-    }
+    })
 
 if __name__ == '__main__':
     print("Starting Flask Server on Port 5000...")
