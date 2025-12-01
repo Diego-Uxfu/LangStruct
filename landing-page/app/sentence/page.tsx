@@ -36,21 +36,7 @@ export default function SentenceAnalysisPage() {
       <div className="w-full max-w-5xl flex gap-8">
 
         {/* LEFT SIDEBAR - Keeping your rules as reference */}
-        <div className="w-1/3 bg-white dark:bg-zinc-900 border border-gray-300 dark:border-zinc-700
-                        rounded-xl shadow-md p-6 h-[600px] overflow-y-auto hidden md:block">
 
-          <h2 className="text-2xl font-semibold mb-4 text-black dark:text-zinc-50">
-            Reference Rules
-          </h2>
-
-          <ul className="space-y-4 text-zinc-700 dark:text-zinc-300 leading-7 text-sm">
-            <li><strong>Subject-Verb Agreement</strong><br/>Simple sentences usually follow Noun → Verb.<br/><em>The cat sleeps.</em></li>
-            <li><strong>Determiners</strong><br/>Articles (the, a) usually precede Nouns.<br/><em>The dog...</em></li>
-            <li><strong>Prepositions</strong><br/>Link nouns to other words.<br/><em>...jumps over the fence.</em></li>
-            <li><strong>Verb Forms</strong><br/>Verbs ending in 's' are usually 3rd person singular.<br/><em>He runs.</em></li>
-            <li><strong>Morphology</strong><br/>Words ending in 'ed' are often past tense verbs.<br/><em>It happened.</em></li>
-          </ul>
-        </div>
 
         {/* RIGHT CONTENT AREA - The Analyzer */}
         <div className="flex-1 flex flex-col items-center bg-white dark:bg-zinc-900
@@ -69,7 +55,7 @@ export default function SentenceAnalysisPage() {
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="E.g., The quick fox jumps over the dog"
+              placeholder="E.g., the baby sleeps"
               className="flex-1 p-3 border border-gray-300 dark:border-zinc-700
                        rounded-lg text-black dark:text-white bg-white dark:bg-zinc-800
                        focus:outline-none focus:ring-2 focus:ring-blue-500"

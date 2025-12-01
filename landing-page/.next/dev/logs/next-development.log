@@ -15,3 +15,138 @@
 [00:17:20.151] Browser ERROR   unhandledRejection: TypeError: Load failed
 [00:17:26.352] Browser ERROR   unhandledRejection: TypeError: Load failed
 [00:17:26.744] Browser ERROR   unhandledRejection: TypeError: Load failed
+[00:19:21.066] Browser ERROR   unhandledRejection: TypeError: Load failed
+[00:19:26.706] Browser ERROR   unhandledRejection: TypeError: Load failed
+[00:19:27.153] Browser ERROR   unhandledRejection: TypeError: Load failed
+[00:19:50.443] Browser ERROR   unhandledRejection: TypeError: Load failed
+[00:19:54.097] Browser ERROR   unhandledRejection: TypeError: Load failed
+[00:19:58.189] Browser ERROR   unhandledRejection: TypeError: Load failed
+[00:19:58.744] Browser ERROR   unhandledRejection: TypeError: Load failed
+[00:23:04.508] Browser ERROR   unhandledRejection: TypeError: Load failed
+[00:26:20.842] Server  LOG      ✓ Compiled in 140ms
+[00:26:30.851] Server  LOG      ✓ Compiled in 72ms
+[00:26:32.776] Browser ERROR   unhandledRejection: TypeError: Load failed
+[00:26:46.486] Server  LOG      ✓ Compiled in 48ms
+[00:26:46.732] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx:38:40
+Parsing ecmascript source code failed
+  36 |       <div className="w-full max-w-5xl flex gap-8">
+  37 |
+> 38 | /* RIGHT CONTENT AREA - The Analyzer */}
+     |                                        ^
+  39 |         <div className="flex-1 flex flex-col items-center bg-white dark:bg-zinc-900
+  40 |                         rounded-xl shadow-md p-10 min-h-[600px]">
+  41 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Server Component]
+[00:26:46.755] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx:38:40
+Parsing ecmascript source code failed
+  36 |       <div className="w-full max-w-5xl flex gap-8">
+  37 |
+> 38 | /* RIGHT CONTENT AREA - The Analyzer */}
+     |                                        ^
+  39 |         <div className="flex-1 flex flex-col items-center bg-white dark:bg-zinc-900
+  40 |                         rounded-xl shadow-md p-10 min-h-[600px]">
+  41 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Server Component]
+[00:26:46.756] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx:38:40
+Parsing ecmascript source code failed
+  36 |       <div className="w-full max-w-5xl flex gap-8">
+  37 |
+> 38 | /* RIGHT CONTENT AREA - The Analyzer */}
+     |                                        ^
+  39 |         <div className="flex-1 flex flex-col items-center bg-white dark:bg-zinc-900
+  40 |                         rounded-xl shadow-md p-10 min-h-[600px]">
+  41 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Server Component]
+[00:26:46.766] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx:38:40
+Parsing ecmascript source code failed
+  36 |       <div className="w-full max-w-5xl flex gap-8">
+  37 |
+> 38 | /* RIGHT CONTENT AREA - The Analyzer */}
+     |                                        ^
+  39 |         <div className="flex-1 flex flex-col items-center bg-white dark:bg-zinc-900
+  40 |                         rounded-xl shadow-md p-10 min-h-[600px]">
+  41 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Server Component]
+[00:26:46.781] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx:38:40
+Parsing ecmascript source code failed
+  36 |       <div className="w-full max-w-5xl flex gap-8">
+  37 |
+> 38 | /* RIGHT CONTENT AREA - The Analyzer */}
+     |                                        ^
+  39 |         <div className="flex-1 flex flex-col items-center bg-white dark:bg-zinc-900
+  40 |                         rounded-xl shadow-md p-10 min-h-[600px]">
+  41 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Server Component]
+[00:26:46.870] Browser ERROR   ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx:38:40
+Parsing ecmascript source code failed
+  36 |       <div className="w-full max-w-5xl flex gap-8">
+  37 |
+> 38 | /* RIGHT CONTENT AREA - The Analyzer */}
+     |                                        ^
+  39 |         <div className="flex-1 flex flex-col items-center bg-white dark:bg-zinc-900
+  40 |                         rounded-xl shadow-md p-10 min-h-[600px]">
+  41 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Client Component Browser]
+    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Client Component SSR]
+    ./projectnlp/LangStruct/landing-page/app/sentence/page.tsx [Server Component]
+[00:26:47.908] Server  LOG      ✓ Compiled in 23ms
+[00:26:50.096] Server  LOG      ✓ Compiled in 36ms
+[00:26:54.956] Server  LOG      ✓ Compiled in 13ms
