@@ -9,7 +9,7 @@ export default function VerbLessonPage() {
 
   // Fetch a new random verb
   const loadVerb = async () => {
-    const res = await fetch("http://localhost:8000/random_verb");
+    const res = await fetch("http://localhost:5000/random_verb");
     const data = await res.json();
     setCurrentVerb(data.verb);
     setText("");
@@ -23,7 +23,7 @@ export default function VerbLessonPage() {
 
   // Submit the user's answer
   const checkAnswer = async () => {
-    const res = await fetch("http://localhost:8000/check", {
+    const res = await fetch("http://localhost:5000/check", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

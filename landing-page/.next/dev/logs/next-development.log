@@ -1,6 +1,17 @@
-[00:00:00.808] Server  LOG      ✓ Ready in 602ms
-[00:00:03.981] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:04.112] Browser WARN    Image with src "http://localhost:3000/vercel.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:05.433] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:12.001] Browser ERROR   unhandledRejection: TypeError: Failed to fetch
-[00:02:43.716] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:01.307] Server  LOG      ✓ Ready in 933ms
+[00:00:05.967] Browser WARN    Image with src "http://localhost:3000/vercel.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:08.857] Browser ERROR   Error fetching sentence: {}
+[00:00:22.899] Browser ERROR   Error fetching sentence: {}
+[00:00:28.441] Browser ERROR   Error fetching sentence: {}
+[00:09:45.354] Browser ERROR   Error connecting to server: {}
+[00:15:32.253] Browser ERROR   unhandledRejection: TypeError: Load failed
+[00:15:40.344] Browser ERROR   unhandledRejection: TypeError: Load failed
+[00:15:41.173] Browser ERROR   unhandledRejection: TypeError: Load failed
+[00:15:45.975] Browser ERROR   unhandledRejection: TypeError: Load failed
+[00:15:46.511] Browser ERROR   unhandledRejection: TypeError: Load failed
+[00:16:56.799] Server  LOG      ✓ Compiled in 125ms
+[00:16:59.983] Server  LOG      ✓ Compiled in 25ms
+[00:17:09.248] Browser ERROR   unhandledRejection: TypeError: Load failed
+[00:17:20.151] Browser ERROR   unhandledRejection: TypeError: Load failed
+[00:17:26.352] Browser ERROR   unhandledRejection: TypeError: Load failed
+[00:17:26.744] Browser ERROR   unhandledRejection: TypeError: Load failed

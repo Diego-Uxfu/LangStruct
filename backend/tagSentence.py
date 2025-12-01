@@ -2,9 +2,6 @@ import joblib
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import wordnet as wn
 
-# --- Feature Functions (Assuming word2features and sent2features are defined above) ---
-# NOTE: The feature functions must match the functions used to train pos_crf_model.pkl
-
 def get_wordnet_pos(universal_tag):
     if universal_tag == 'ADJ': return wn.ADJ
     elif universal_tag == 'VERB': return wn.VERB
@@ -15,10 +12,7 @@ def word2features(sent, i):
     word = sent[i][0]
     word_lower = word.lower()
     lemmatizer = WordNetLemmatizer()
-    # --- LEMMA CALCULATION (Heuristic) ---
-    # The heuristic: Check if the word changes when treated as a Verb. 
-    # If yes, use the verb lemma. Otherwise, default to the noun lemma.
-    # This captures inflections like "sleeps" -> "sleep" (Verb) but leaves "cat" -> "cat" (Noun).
+
     lemma_verb = lemmatizer.lemmatize(word_lower, wn.VERB)
     
     if lemma_verb != word_lower:
@@ -66,7 +60,6 @@ def word2features(sent, i):
 
     return features
 def sent2features(sent):
-    # This function must be present and identical to your training script
     return [word2features(sent, i) for i in range(len(sent))]
 
 def tagSentence(s):
@@ -83,13 +76,10 @@ def tagSentence(s):
     # Split string into words
     words = s.split() 
     
-    # Create the structure (word, placeholder_tag) required by sent2features
-    # The tag is None/empty because we are in the prediction phase.
     sent = [(w, None) for w in words]
         
     # Generate features for CRF
-    # The features list must be wrapped in another list because crf.predict expects 
-    # a list of sentences.
+
     features = sent2features(sent)
     
     # Predict POS tags

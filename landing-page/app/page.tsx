@@ -58,14 +58,24 @@ export default function Home() {
             {/*start of button 2*/}
           <a
             className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="/sentence"
             target="_blank"
             rel="noopener noreferrer"
           >
 
             Sentence Completion
+
           </a>
-            {/*end of button 2*/}
+                    <a
+            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
+            href="/lesson"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            premade sentences
+          </a>
+            {/*end of button 3*/}
         </div>
       </main>
     </div>
