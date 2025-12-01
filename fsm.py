@@ -1,137 +1,115 @@
-"""
-the finite state machine will be used for a lesson plan in english vocabulary conjugation
+def vowel(ch):
+    return ch.lower() in "aeiou"
 
-conjugations are usually one of the hardest parts of any language to undertand, as there
-are irregular forms and usually at least 4 conjugations, so this is a useful lesson plan
+def clean_word(w):
+    return w.strip().strip('"').strip("'")
 
-**potential second part could be a memory-based lesson, where irregular verb conversions need to
-be known as theres no pattern for them
-"""
+def is_cvc(word):
+    if len(word) < 3:
+        return False
 
-"""
-the following set of rules can be applied to a majority of english verbs 
-*irregular verbs will have explicit conversion (perhaps a part two of the lesson?)*
-
-1) if verb ends in: 'e'                                apply: add 'd' to the end           ex: love -> loved
-2) if verb ends in: any vowel -'e'                     apply:  + "ed" to end               ex: echo -> echoed
-3) if verb ends in: any vowel + "x,y,z"                apply: + "ed" to end                ex: play -> played; fix -> fixed
-4) if verb ends in: any cons. + "x,y,z"                apply: 'y' -> 'i' + "ed" to end     ex: cry -> cried
-5) if verb ends in: v + v + cons                       apply: + "ed" to end                ex: recruit -> recruited
-6) if verb ends in: stressed * (cons. + v + cons.)     apply: x2 last letter + "ed"        ex: occur -> occurred 
-7) if verb ends in: (unstressed) c + v + c             apply: + "ed"                       ex: happen -> happened
-"""
-
-def logic():
-    with open("word.txt", "r") as file:
-        for line in file:
-            next_word = line.strip()
-
-            #add irregular word check here
-
-            sub = next_word[-3:]
-            out = ""
-            state = 0
-
-            for char in sub:
-                # first path split, based on if first char is a cons. or vowel
-                if state is 0:
-                    if not vowel_check(char): # cons case
-                        state = 1
-                        out += char
-                    else:
-                        state = 8 # vowel case
-                        out += char
-
-                elif state is 1:
-                    if not vowel_check(char):
-                        state = 2
-                        out += char
-
-                    elif vowel_check(char):
-                        state = 7
-                        out += char
-
-                elif state is 2:
-                    if char is 'y':
-                        state = 3
-                        char = 'i'
-                        out += char + "ed"
-
-                    elif out.islower():
-                        out = out + "ed"
-                        state = 3
-
-                    elif out.isupper():
-                        out = out[-1] + "ed"
-                        state = 3
-
-                elif state is 3:
-                    break
-
-                elif state is 7:
-                    if not vowel_check(char):
-                        state = 2
-                        out += char
+    c1, v, c2 = word[-3], word[-2], word[-1]
+    return (not vowel(c1)) and vowel(v) and (not vowel(c2))
 
 
-                    elif char == 'a' or char == 'i' or char != 'o' or char != 'u':
-                        # all vowels but 'e'
-                        state = 12
-                        out += char
+def ends_with_double_vowel_cons(word):
+    if len(word) < 3:
+        return False
+    return vowel(word[-3]) and vowel(word[-2]) and not vowel(word[-1])
 
-                    elif char == 'x' or char == 'y' or char == 'w':
-                        state = 12
-                        out += char
 
-                    elif char == 'e':
-                        state = 14
-                        out += char
+def ends_with_vowel_cons(word):
+    if len(word) < 2:
+        return False
+    return vowel(word[-2]) and not vowel(word[-1])
 
-                else:
-                    state = 8
 
-                    if not vowel_check(char):
-                        state = 10
-                        out += char
+def conjugate_regular(verb):
+    v = verb.lower()
 
-                    elif char == 'a' or char == 'e' or char == 'i' or char != 'o' or char != 'u':
-                        state = 9
-                        out += char
+    # RULE 1 — ends with "e"
+    if v.endswith("e"):
+        return v + "d"
 
-                    elif state is 9:
-                        if not vowel_check(char):
-                            state = 10
-                            out += char
+    # RULE 4 — consonant + y → ied
+    if len(v) >= 2 and not vowel(v[-2]) and v.endswith("y"):
+        return v[:-1] + "ied"
 
-                        if char == 'x' or char == 'y' or char == 'w':
-                            state = 12
-                            out += char
+    # RULE 3 — vowel + (x,y,z) → +ed
+    if len(v) >= 2 and vowel(v[-2]) and v[-1] in "xyz":
+        return v + "ed"
 
-                        if char == 'a' or char == 'e' or char == 'i' or char != 'o' or char != 'u':
-                            state = 12
-                            out += char
+    # RULE 6 — stressed CVC → double final consonant + ed
+    # Without stress data, treat short words (≤4 letters) as stressed
+    if is_cvc(v) and v[-1] not in "wxy" and len(v) <= 4:
+        return v + v[-1] + "ed"
 
-                        if char == 'e':
-                            state = 14
+    # RULE 7 — unstressed CVC → +ed
+    if is_cvc(v):
+        return v + "ed"
 
-                    elif state == 10:
-                        # 'y' condition
-                        if char == 'y':
-                            state = 3
+    # RULE 5 — vowel+vowel+cons → +ed (recruit → recruited)
+    if ends_with_double_vowel_cons(v):
+        return v + "ed"
 
-                        if not vowel_check(out[-1]):
-                            state = 11
+    # RULE 2 — ends with vowel other than "e" → +ed
+    if len(v) >= 1 and vowel(v[-1]):
+        return v + "ed"
 
-                    elif state == 11:
-                        out += 'ed'
-                        break
+    # DEFAULT
+    return v + "ed"
 
-            pre = next_word[:-3]
-            to_return = pre.lower() + out.lower()
-            # print(to_return) # uncomment to debug
-            #ls.append(to_return)
-            return to_return
 
-def vowel_check(char):
-    vowels = {'a', 'e', 'i', 'o', 'u'}
-    return char.lower() in vowels
+def irregular_verbs(filename):
+    out = {}
+    try:
+        with open(filename, "r") as f:
+            for line in f:
+                line = line.strip()
+                if not line or ":" not in line:
+                    continue
+
+                k, v = line.split(":", 1)
+                k = k.strip().strip('"\'').lower()
+                v = v.strip().strip('"\'').lower()
+
+                if k:
+                    out[k] = v
+    except FileNotFoundError:
+        print(f"Error: irregular verb file '{filename}' not found.")
+        return {}
+
+    return out
+
+
+def main():
+    irregular = irregular_verbs("irregular_verbs.txt")
+    results = []
+
+    with open("words.txt", "r") as f:
+        for raw in f:
+            word_raw = clean_word(raw)    # remove whitespace + quotes
+            word = word_raw.lower()
+
+            if not word:
+                continue
+
+            # ----- IRREGULAR CHECK FIRST -----
+            if word in irregular:
+                past = irregular[word]
+                print(f"{word_raw} -> {past} (irregular)")
+                results.append(past)
+                continue
+
+            # ----- REGULAR RULES -----
+            past = conjugate_regular(word)
+            print(f"{word_raw} -> {past}")
+            results.append(past)
+
+    print("\nFINAL LIST:")
+    print(results)
+    return results
+
+
+main()
+
