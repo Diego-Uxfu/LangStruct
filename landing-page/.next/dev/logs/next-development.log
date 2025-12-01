@@ -150,3 +150,6 @@ Import traces:
 [00:26:47.908] Server  LOG      ✓ Compiled in 23ms
 [00:26:50.096] Server  LOG      ✓ Compiled in 36ms
 [00:26:54.956] Server  LOG      ✓ Compiled in 13ms
+[00:29:59.566] Browser ERROR   unhandledRejection: TypeError: Load failed
+[00:30:02.759] Browser ERROR   unhandledRejection: TypeError: Load failed
+[05:48:04.368] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

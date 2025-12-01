@@ -8,6 +8,7 @@ from cfg import CheckSentence
 from fsm import SentenceGenerator 
 from verb_fsm import *
 from pydantic import BaseModel
+import random
 app = Flask(__name__)
 CORS(app)
 
@@ -62,12 +63,12 @@ def analyze():
 
 
     # 3. Check Validity using your CFG script
-    # The check method expects a list of tags
+
     is_valid = checker.check(list(tags))
     
     # 4. Prepare data for Frontend
     words = text.split()
-    # Zip words with tags: [["The", "DET"], ["cat", "NOUN"]]
+
     response_tags = list(zip(words, tags))
 
     return jsonify({
@@ -82,6 +83,7 @@ class CheckRequest(BaseModel):
     user_answer: str
 
 @app.get("/random_verb")
+
 def random_verb():
     verb = random.choice(all_verbs)
     return {"verb": verb}
