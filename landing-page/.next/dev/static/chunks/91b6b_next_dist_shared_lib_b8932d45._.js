@@ -1,8 +1,8 @@
 (globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([typeof document === "object" ? document.currentScript : undefined,
-"[project]/node_modules/next/dist/shared/lib/head-manager-context.shared-runtime.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/head-manager-context.shared-runtime.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -13,14 +13,14 @@ Object.defineProperty(exports, "HeadManagerContext", {
         return HeadManagerContext;
     }
 });
-const _interop_require_default = __turbopack_context__.r("[project]/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/react/index.js [client] (ecmascript)"));
+const _interop_require_default = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
+const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/react/index.js [client] (ecmascript)"));
 const HeadManagerContext = _react.default.createContext({});
 if ("TURBOPACK compile-time truthy", 1) {
     HeadManagerContext.displayName = 'HeadManagerContext';
 } //# sourceMappingURL=head-manager-context.shared-runtime.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/mitt.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/mitt.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 /*
@@ -67,10 +67,10 @@ function mitt() {
     };
 } //# sourceMappingURL=mitt.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router-context.shared-runtime.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router-context.shared-runtime.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -81,17 +81,17 @@ Object.defineProperty(exports, "RouterContext", {
         return RouterContext;
     }
 });
-const _interop_require_default = __turbopack_context__.r("[project]/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/react/index.js [client] (ecmascript)"));
+const _interop_require_default = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
+const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/react/index.js [client] (ecmascript)"));
 const RouterContext = _react.default.createContext(null);
 if ("TURBOPACK compile-time truthy", 1) {
     RouterContext.displayName = 'RouterContext';
 } //# sourceMappingURL=router-context.shared-runtime.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/utils/warn-once.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/utils/warn-once.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -113,10 +113,10 @@ if ("TURBOPACK compile-time truthy", 1) {
     };
 } //# sourceMappingURL=warn-once.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/disable-smooth-scroll.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/disable-smooth-scroll.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -127,7 +127,7 @@ Object.defineProperty(exports, "disableSmoothScrollDuringRouteTransition", {
         return disableSmoothScrollDuringRouteTransition;
     }
 });
-const _warnonce = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/utils/warn-once.js [client] (ecmascript)");
+const _warnonce = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/utils/warn-once.js [client] (ecmascript)");
 function disableSmoothScrollDuringRouteTransition(fn, options = {}) {
     // if only the hash is changed, we don't need to disable smooth scrolling
     // we only care to prevent smooth scrolling when navigating to a new page to avoid jarring UX
@@ -159,7 +159,7 @@ function disableSmoothScrollDuringRouteTransition(fn, options = {}) {
     htmlElement.style.scrollBehavior = existing;
 } //# sourceMappingURL=disable-smooth-scroll.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/page-path/ensure-leading-slash.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/page-path/ensure-leading-slash.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 /**
@@ -178,7 +178,7 @@ function ensureLeadingSlash(path) {
     return path.startsWith('/') ? path : `/${path}`;
 } //# sourceMappingURL=ensure-leading-slash.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/segment.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/segment.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -276,7 +276,7 @@ function getSelectedLayoutSegmentPath(tree, parallelRouteKey, first = true, segm
 const PAGE_SEGMENT_KEY = '__PAGE__';
 const DEFAULT_SEGMENT_KEY = '__DEFAULT__'; //# sourceMappingURL=segment.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/app-paths.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/app-paths.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -300,8 +300,8 @@ _export(exports, {
         return normalizeRscURL;
     }
 });
-const _ensureleadingslash = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/page-path/ensure-leading-slash.js [client] (ecmascript)");
-const _segment = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/segment.js [client] (ecmascript)");
+const _ensureleadingslash = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/page-path/ensure-leading-slash.js [client] (ecmascript)");
+const _segment = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/segment.js [client] (ecmascript)");
 function normalizeAppPath(route) {
     return (0, _ensureleadingslash.ensureLeadingSlash)(route.split('/').reduce((pathname, segment, index, segments)=>{
         // Empty segments are ignored.
@@ -327,7 +327,7 @@ function normalizeRscURL(url) {
     return url.replace(/\.rsc($|\?)/, '$1');
 } //# sourceMappingURL=app-paths.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/interception-routes.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/interception-routes.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -355,7 +355,7 @@ _export(exports, {
         return isInterceptionRouteAppPath;
     }
 });
-const _apppaths = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/app-paths.js [client] (ecmascript)");
+const _apppaths = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/app-paths.js [client] (ecmascript)");
 const INTERCEPTION_ROUTE_MARKERS = [
     '(..)(..)',
     '(.)',
@@ -436,7 +436,7 @@ function extractInterceptionRouteInformation(path) {
     };
 } //# sourceMappingURL=interception-routes.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/is-dynamic.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/is-dynamic.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -448,7 +448,7 @@ Object.defineProperty(exports, "isDynamicRoute", {
         return isDynamicRoute;
     }
 });
-const _interceptionroutes = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/interception-routes.js [client] (ecmascript)");
+const _interceptionroutes = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/interception-routes.js [client] (ecmascript)");
 // Identify /.*[param].*/ in route string
 const TEST_ROUTE = /\/[^/]*\[[^/]+\][^/]*(?=\/|$)/;
 // Identify /[param]/ in route string
@@ -463,7 +463,7 @@ function isDynamicRoute(route, strict = true) {
     return TEST_ROUTE.test(route);
 } //# sourceMappingURL=is-dynamic.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/querystring.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/querystring.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -543,10 +543,10 @@ function assign(target, ...searchParamsList) {
     return target;
 } //# sourceMappingURL=querystring.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/utils.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/utils.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -753,7 +753,7 @@ function stringifyError(error) {
     });
 } //# sourceMappingURL=utils.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/parse-path.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/parse-path.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 /**
@@ -787,7 +787,7 @@ function parsePath(path) {
     };
 } //# sourceMappingURL=parse-path.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/add-path-prefix.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/add-path-prefix.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -799,7 +799,7 @@ Object.defineProperty(exports, "addPathPrefix", {
         return addPathPrefix;
     }
 });
-const _parsepath = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/parse-path.js [client] (ecmascript)");
+const _parsepath = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/parse-path.js [client] (ecmascript)");
 function addPathPrefix(path, prefix) {
     if (!path.startsWith('/') || !prefix) {
         return path;
@@ -808,7 +808,7 @@ function addPathPrefix(path, prefix) {
     return `${prefix}${pathname}${query}${hash}`;
 } //# sourceMappingURL=add-path-prefix.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/remove-trailing-slash.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/remove-trailing-slash.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 /**
@@ -830,7 +830,7 @@ function removeTrailingSlash(route) {
     return route.replace(/\/$/, '') || '/';
 } //# sourceMappingURL=remove-trailing-slash.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/route-match-utils.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/route-match-utils.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 /**
@@ -865,8 +865,8 @@ _export(exports, {
         return safeRouteMatcher;
     }
 });
-const _pathtoregexp = __turbopack_context__.r("[project]/node_modules/next/dist/compiled/path-to-regexp/index.js [client] (ecmascript)");
-const _routepatternnormalizer = __turbopack_context__.r("[project]/node_modules/next/dist/lib/route-pattern-normalizer.js [client] (ecmascript)");
+const _pathtoregexp = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/compiled/path-to-regexp/index.js [client] (ecmascript)");
+const _routepatternnormalizer = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/lib/route-pattern-normalizer.js [client] (ecmascript)");
 function safePathToRegexp(route, keys, options) {
     if (typeof route !== 'string') {
         return (0, _pathtoregexp.pathToRegexp)(route, keys, options);
@@ -944,7 +944,7 @@ function safeRouteMatcher(matcherFn) {
     };
 } //# sourceMappingURL=route-match-utils.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/route-matcher.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/route-matcher.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -956,8 +956,8 @@ Object.defineProperty(exports, "getRouteMatcher", {
         return getRouteMatcher;
     }
 });
-const _utils = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/utils.js [client] (ecmascript)");
-const _routematchutils = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/route-match-utils.js [client] (ecmascript)");
+const _utils = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/utils.js [client] (ecmascript)");
+const _routematchutils = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/route-match-utils.js [client] (ecmascript)");
 function getRouteMatcher({ re, groups }) {
     const rawMatcher = (pathname)=>{
         const routeMatch = re.exec(pathname);
@@ -990,7 +990,7 @@ function getRouteMatcher({ re, groups }) {
     return (0, _routematchutils.safeRouteMatcher)(rawMatcher);
 } //# sourceMappingURL=route-matcher.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/escape-regexp.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/escape-regexp.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 // regexp is based on https://github.com/sindresorhus/escape-string-regexp
@@ -1013,7 +1013,7 @@ function escapeStringRegexp(str) {
     return str;
 } //# sourceMappingURL=escape-regexp.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/invariant-error.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/invariant-error.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1032,7 +1032,7 @@ class InvariantError extends Error {
     }
 } //# sourceMappingURL=invariant-error.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/parse-loader-tree.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/parse-loader-tree.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1044,7 +1044,7 @@ Object.defineProperty(exports, "parseLoaderTree", {
         return parseLoaderTree;
     }
 });
-const _segment = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/segment.js [client] (ecmascript)");
+const _segment = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/segment.js [client] (ecmascript)");
 function parseLoaderTree(tree) {
     const [segment, parallelRoutes, modules] = tree;
     const { layout, template } = modules;
@@ -1062,7 +1062,7 @@ function parseLoaderTree(tree) {
     };
 } //# sourceMappingURL=parse-loader-tree.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/get-segment-param.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/get-segment-param.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1090,7 +1090,7 @@ _export(exports, {
         return isCatchAll;
     }
 });
-const _interceptionroutes = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/interception-routes.js [client] (ecmascript)");
+const _interceptionroutes = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/interception-routes.js [client] (ecmascript)");
 function getSegmentParam(segment) {
     const interceptionMarker = _interceptionroutes.INTERCEPTION_ROUTE_MARKERS.find((marker)=>segment.startsWith(marker));
     // if an interception marker is part of the path segment, we need to jump ahead
@@ -1153,7 +1153,7 @@ function getParamProperties(paramType) {
     };
 } //# sourceMappingURL=get-segment-param.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/get-dynamic-param.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/get-dynamic-param.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1189,9 +1189,9 @@ _export(exports, {
         return parseParameter;
     }
 });
-const _invarianterror = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/invariant-error.js [client] (ecmascript)");
-const _parseloadertree = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/parse-loader-tree.js [client] (ecmascript)");
-const _getsegmentparam = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/get-segment-param.js [client] (ecmascript)");
+const _invarianterror = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/invariant-error.js [client] (ecmascript)");
+const _parseloadertree = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/parse-loader-tree.js [client] (ecmascript)");
+const _getsegmentparam = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/get-segment-param.js [client] (ecmascript)");
 /**
  * Gets the value of a param from the params object. This correctly handles the
  * case where the param is a fallback route param and encodes the resulting
@@ -1350,7 +1350,7 @@ function parseMatchedParameter(param) {
     };
 } //# sourceMappingURL=get-dynamic-param.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/route-regex.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/route-regex.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1378,11 +1378,11 @@ _export(exports, {
         return getRouteRegex;
     }
 });
-const _constants = __turbopack_context__.r("[project]/node_modules/next/dist/lib/constants.js [client] (ecmascript)");
-const _interceptionroutes = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/interception-routes.js [client] (ecmascript)");
-const _escaperegexp = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/escape-regexp.js [client] (ecmascript)");
-const _removetrailingslash = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/remove-trailing-slash.js [client] (ecmascript)");
-const _getdynamicparam = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/get-dynamic-param.js [client] (ecmascript)");
+const _constants = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/lib/constants.js [client] (ecmascript)");
+const _interceptionroutes = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/interception-routes.js [client] (ecmascript)");
+const _escaperegexp = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/escape-regexp.js [client] (ecmascript)");
+const _removetrailingslash = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/remove-trailing-slash.js [client] (ecmascript)");
+const _getdynamicparam = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/get-dynamic-param.js [client] (ecmascript)");
 function getParametrizedRoute(route, includeSuffix, includePrefix) {
     const groups = {};
     let groupIndex = 1;
@@ -1607,7 +1607,7 @@ function getNamedMiddlewareRegex(normalizedRoute, options) {
     };
 } //# sourceMappingURL=route-regex.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/interpolate-as.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/interpolate-as.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1619,8 +1619,8 @@ Object.defineProperty(exports, "interpolateAs", {
         return interpolateAs;
     }
 });
-const _routematcher = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/route-matcher.js [client] (ecmascript)");
-const _routeregex = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/route-regex.js [client] (ecmascript)");
+const _routematcher = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/route-matcher.js [client] (ecmascript)");
+const _routeregex = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/route-regex.js [client] (ecmascript)");
 function interpolateAs(route, asPathname, query) {
     let interpolatedRoute = '';
     const dynamicRegex = (0, _routeregex.getRouteRegex)(route);
@@ -1659,7 +1659,7 @@ function interpolateAs(route, asPathname, query) {
     };
 } //# sourceMappingURL=interpolate-as.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/get-asset-path-from-route.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/get-asset-path-from-route.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 // Translates a logical route into its pages asset path (relative from a common prefix)
@@ -1678,7 +1678,7 @@ function getAssetPathFromRoute(route, ext = '') {
     return path + ext;
 } //# sourceMappingURL=get-asset-path-from-route.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/parse-relative-url.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/parse-relative-url.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1690,8 +1690,8 @@ Object.defineProperty(exports, "parseRelativeUrl", {
         return parseRelativeUrl;
     }
 });
-const _utils = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/utils.js [client] (ecmascript)");
-const _querystring = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/querystring.js [client] (ecmascript)");
+const _utils = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/utils.js [client] (ecmascript)");
+const _querystring = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/querystring.js [client] (ecmascript)");
 function parseRelativeUrl(url, base, parseQuery = true) {
     const globalBase = new URL(typeof window === 'undefined' ? 'http://n' : (0, _utils.getLocationOrigin)());
     const resolvedBase = base ? new URL(base, globalBase) : url.startsWith('.') ? new URL(typeof window === 'undefined' ? 'http://n' : window.location.href) : globalBase;
@@ -1715,7 +1715,7 @@ function parseRelativeUrl(url, base, parseQuery = true) {
     };
 } //# sourceMappingURL=parse-relative-url.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/encode-uri-path.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/encode-uri-path.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1731,7 +1731,7 @@ function encodeURIPath(file) {
     return file.split('/').map((p)=>encodeURIComponent(p)).join('/');
 } //# sourceMappingURL=encode-uri-path.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/modern-browserslist-target.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/modern-browserslist-target.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 // Note: This file is JS because it's used by the taskfile-swc.js file, which is JS.
@@ -1747,7 +1747,7 @@ function encodeURIPath(file) {
 ];
 module.exports = MODERN_BROWSERSLIST_TARGET; //# sourceMappingURL=modern-browserslist-target.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/entry-constants.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/entry-constants.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1784,10 +1784,10 @@ const UNDERSCORE_NOT_FOUND_ROUTE_ENTRY = `${UNDERSCORE_NOT_FOUND_ROUTE}/page`;
 const UNDERSCORE_GLOBAL_ERROR_ROUTE = '/_global-error';
 const UNDERSCORE_GLOBAL_ERROR_ROUTE_ENTRY = `${UNDERSCORE_GLOBAL_ERROR_ROUTE}/page`; //# sourceMappingURL=entry-constants.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/constants.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/constants.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -2074,9 +2074,9 @@ _export(exports, {
         return WEBPACK_STATS;
     }
 });
-const _interop_require_default = __turbopack_context__.r("[project]/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
-const _modernbrowserslisttarget = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/modern-browserslist-target.js [client] (ecmascript)"));
-const _entryconstants = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/entry-constants.js [client] (ecmascript)");
+const _interop_require_default = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
+const _modernbrowserslisttarget = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/modern-browserslist-target.js [client] (ecmascript)"));
+const _entryconstants = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/entry-constants.js [client] (ecmascript)");
 const COMPILER_NAMES = {
     client: 'client',
     server: 'server',
@@ -2147,7 +2147,7 @@ const CONFIG_FILES = [
     'next.config.ts',
     // process.features can be undefined on Edge runtime
     // TODO: Remove `as any` once we bump @types/node to v22.10.0+
-    ...__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"]?.features?.typescript ? [
+    ...__TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"]?.features?.typescript ? [
         'next.config.mts'
     ] : []
 ];
@@ -2231,11 +2231,11 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
     module.exports = exports.default;
 } //# sourceMappingURL=constants.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/bloom-filter.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/bloom-filter.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 // minimal implementation MurmurHash2 hash function
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -2312,7 +2312,7 @@ class BloomFilter {
     }
 } //# sourceMappingURL=bloom-filter.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/is-plain-object.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/is-plain-object.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2355,7 +2355,7 @@ function isPlainObject(value) {
    */ return prototype === null || prototype.hasOwnProperty('isPrototypeOf');
 } //# sourceMappingURL=is-plain-object.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/sorted-routes.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/sorted-routes.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2600,7 +2600,7 @@ function getSortedRouteObjects(objects, getter) {
     return sorted.map((pathname)=>objects[indexes[pathname]]);
 } //# sourceMappingURL=sorted-routes.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/index.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/index.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2628,10 +2628,10 @@ _export(exports, {
         return _isdynamic.isDynamicRoute;
     }
 });
-const _sortedroutes = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/sorted-routes.js [client] (ecmascript)");
-const _isdynamic = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/is-dynamic.js [client] (ecmascript)"); //# sourceMappingURL=index.js.map
+const _sortedroutes = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/sorted-routes.js [client] (ecmascript)");
+const _isdynamic = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/is-dynamic.js [client] (ecmascript)"); //# sourceMappingURL=index.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/page-path/normalize-path-sep.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/page-path/normalize-path-sep.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 /**
@@ -2651,7 +2651,7 @@ function normalizePathSep(path) {
     return path.replace(/\\/g, '/');
 } //# sourceMappingURL=normalize-path-sep.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/page-path/denormalize-page-path.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/page-path/denormalize-page-path.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2663,14 +2663,14 @@ Object.defineProperty(exports, "denormalizePagePath", {
         return denormalizePagePath;
     }
 });
-const _utils = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/index.js [client] (ecmascript)");
-const _normalizepathsep = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/page-path/normalize-path-sep.js [client] (ecmascript)");
+const _utils = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/index.js [client] (ecmascript)");
+const _normalizepathsep = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/page-path/normalize-path-sep.js [client] (ecmascript)");
 function denormalizePagePath(page) {
     let _page = (0, _normalizepathsep.normalizePathSep)(page);
     return _page.startsWith('/index/') && !(0, _utils.isDynamicRoute)(_page) ? _page.slice(6) : _page !== '/index' ? _page : '/';
 } //# sourceMappingURL=denormalize-page-path.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/i18n/normalize-locale-path.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/i18n/normalize-locale-path.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2725,7 +2725,7 @@ function normalizeLocalePath(pathname, locales) {
     };
 } //# sourceMappingURL=normalize-locale-path.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/format-url.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/format-url.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 // Format function modified from nodejs
@@ -2749,7 +2749,7 @@ function normalizeLocalePath(pathname, locales) {
 // DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
 // OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
 // USE OR OTHER DEALINGS IN THE SOFTWARE.
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -2776,8 +2776,8 @@ _export(exports, {
         return urlObjectKeys;
     }
 });
-const _interop_require_wildcard = __turbopack_context__.r("[project]/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [client] (ecmascript)");
-const _querystring = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/querystring.js [client] (ecmascript)"));
+const _interop_require_wildcard = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [client] (ecmascript)");
+const _querystring = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/querystring.js [client] (ecmascript)"));
 const slashedProtocols = /https?|ftp|gopher|file/;
 function formatUrl(urlObj) {
     let { auth, hostname } = urlObj;
@@ -2839,7 +2839,7 @@ function formatWithValidation(url) {
     return formatUrl(url);
 } //# sourceMappingURL=format-url.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/path-has-prefix.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/path-has-prefix.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2851,7 +2851,7 @@ Object.defineProperty(exports, "pathHasPrefix", {
         return pathHasPrefix;
     }
 });
-const _parsepath = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/parse-path.js [client] (ecmascript)");
+const _parsepath = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/parse-path.js [client] (ecmascript)");
 function pathHasPrefix(path, prefix) {
     if (typeof path !== 'string') {
         return false;
@@ -2860,7 +2860,7 @@ function pathHasPrefix(path, prefix) {
     return pathname === prefix || pathname.startsWith(prefix + '/');
 } //# sourceMappingURL=path-has-prefix.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/omit.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/omit.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2882,7 +2882,7 @@ function omit(object, keys) {
     return omitted;
 } //# sourceMappingURL=omit.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/is-local-url.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/is-local-url.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2894,8 +2894,8 @@ Object.defineProperty(exports, "isLocalURL", {
         return isLocalURL;
     }
 });
-const _utils = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/utils.js [client] (ecmascript)");
-const _hasbasepath = __turbopack_context__.r("[project]/node_modules/next/dist/client/has-base-path.js [client] (ecmascript)");
+const _utils = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/utils.js [client] (ecmascript)");
+const _hasbasepath = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/client/has-base-path.js [client] (ecmascript)");
 function isLocalURL(url) {
     // prevent a hydration mismatch on href for url with anchor refs
     if (!(0, _utils.isAbsoluteUrl)(url)) return true;
@@ -2909,7 +2909,7 @@ function isLocalURL(url) {
     }
 } //# sourceMappingURL=is-local-url.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/remove-path-prefix.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/remove-path-prefix.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2921,7 +2921,7 @@ Object.defineProperty(exports, "removePathPrefix", {
         return removePathPrefix;
     }
 });
-const _pathhasprefix = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/path-has-prefix.js [client] (ecmascript)");
+const _pathhasprefix = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/path-has-prefix.js [client] (ecmascript)");
 function removePathPrefix(path, prefix) {
     // If the path doesn't start with the prefix we can return it as is. This
     // protects us from situations where the prefix is a substring of the path
@@ -2949,7 +2949,7 @@ function removePathPrefix(path, prefix) {
     return `/${withoutPrefix}`;
 } //# sourceMappingURL=remove-path-prefix.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/get-next-pathname-info.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/get-next-pathname-info.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2961,9 +2961,9 @@ Object.defineProperty(exports, "getNextPathnameInfo", {
         return getNextPathnameInfo;
     }
 });
-const _normalizelocalepath = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/i18n/normalize-locale-path.js [client] (ecmascript)");
-const _removepathprefix = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/remove-path-prefix.js [client] (ecmascript)");
-const _pathhasprefix = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/path-has-prefix.js [client] (ecmascript)");
+const _normalizelocalepath = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/i18n/normalize-locale-path.js [client] (ecmascript)");
+const _removepathprefix = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/remove-path-prefix.js [client] (ecmascript)");
+const _pathhasprefix = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/path-has-prefix.js [client] (ecmascript)");
 function getNextPathnameInfo(pathname, options) {
     const { basePath, i18n, trailingSlash } = options.nextConfig ?? {};
     const info = {
@@ -3002,7 +3002,7 @@ function getNextPathnameInfo(pathname, options) {
     return info;
 } //# sourceMappingURL=get-next-pathname-info.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/add-path-suffix.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/add-path-suffix.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3014,7 +3014,7 @@ Object.defineProperty(exports, "addPathSuffix", {
         return addPathSuffix;
     }
 });
-const _parsepath = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/parse-path.js [client] (ecmascript)");
+const _parsepath = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/parse-path.js [client] (ecmascript)");
 function addPathSuffix(path, suffix) {
     if (!path.startsWith('/') || !suffix) {
         return path;
@@ -3023,7 +3023,7 @@ function addPathSuffix(path, suffix) {
     return `${pathname}${suffix}${query}${hash}`;
 } //# sourceMappingURL=add-path-suffix.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/add-locale.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/add-locale.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3035,8 +3035,8 @@ Object.defineProperty(exports, "addLocale", {
         return addLocale;
     }
 });
-const _addpathprefix = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/add-path-prefix.js [client] (ecmascript)");
-const _pathhasprefix = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/path-has-prefix.js [client] (ecmascript)");
+const _addpathprefix = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/add-path-prefix.js [client] (ecmascript)");
+const _pathhasprefix = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/path-has-prefix.js [client] (ecmascript)");
 function addLocale(path, locale, defaultLocale, ignorePrefix) {
     // If no locale was given or the locale is the default locale, we don't need
     // to prefix the path.
@@ -3052,7 +3052,7 @@ function addLocale(path, locale, defaultLocale, ignorePrefix) {
     return (0, _addpathprefix.addPathPrefix)(path, `/${locale}`);
 } //# sourceMappingURL=add-locale.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/format-next-pathname-info.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/format-next-pathname-info.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3064,10 +3064,10 @@ Object.defineProperty(exports, "formatNextPathnameInfo", {
         return formatNextPathnameInfo;
     }
 });
-const _removetrailingslash = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/remove-trailing-slash.js [client] (ecmascript)");
-const _addpathprefix = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/add-path-prefix.js [client] (ecmascript)");
-const _addpathsuffix = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/add-path-suffix.js [client] (ecmascript)");
-const _addlocale = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/add-locale.js [client] (ecmascript)");
+const _removetrailingslash = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/remove-trailing-slash.js [client] (ecmascript)");
+const _addpathprefix = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/add-path-prefix.js [client] (ecmascript)");
+const _addpathsuffix = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/add-path-suffix.js [client] (ecmascript)");
+const _addlocale = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/add-locale.js [client] (ecmascript)");
 function formatNextPathnameInfo(info) {
     let pathname = (0, _addlocale.addLocale)(info.pathname, info.locale, info.buildId ? undefined : info.defaultLocale, info.ignorePrefix);
     if (info.buildId || !info.trailingSlash) {
@@ -3080,7 +3080,7 @@ function formatNextPathnameInfo(info) {
     return !info.buildId && info.trailingSlash ? !pathname.endsWith('/') ? (0, _addpathsuffix.addPathSuffix)(pathname, '/') : pathname : (0, _removetrailingslash.removeTrailingSlash)(pathname);
 } //# sourceMappingURL=format-next-pathname-info.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/compare-states.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/compare-states.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3115,7 +3115,7 @@ function compareRouterStates(a, b) {
     return true;
 } //# sourceMappingURL=compare-states.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/html-bots.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/html-bots.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 // This regex contains the bots that we need to do a blocking render for and can't safely stream the response
@@ -3133,7 +3133,7 @@ Object.defineProperty(exports, "HTML_LIMITED_BOT_UA_RE", {
 });
 const HTML_LIMITED_BOT_UA_RE = /[\w-]+-Google|Google-[\w-]+|Chrome-Lighthouse|Slurp|DuckDuckBot|baiduspider|yandex|sogou|bitlybot|tumblr|vkShare|quora link preview|redditbot|ia_archiver|Bingbot|BingPreview|applebot|facebookexternalhit|facebookcatalog|Twitterbot|LinkedInBot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview|Yeti|googleweblight/i; //# sourceMappingURL=html-bots.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/is-bot.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/is-bot.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3165,7 +3165,7 @@ _export(exports, {
         return isBot;
     }
 });
-const _htmlbots = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/html-bots.js [client] (ecmascript)");
+const _htmlbots = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/html-bots.js [client] (ecmascript)");
 // Bot crawler that will spin up a headless browser and execute JS.
 // Only the main Googlebot search crawler executes JavaScript, not other Google crawlers.
 // x-ref: https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers
@@ -3191,10 +3191,10 @@ function getBotType(userAgent) {
     return undefined;
 } //# sourceMappingURL=is-bot.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/router.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/router.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -3221,39 +3221,39 @@ _export(exports, {
         return matchesMiddleware;
     }
 });
-const _interop_require_default = __turbopack_context__.r("[project]/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
-const _interop_require_wildcard = __turbopack_context__.r("[project]/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [client] (ecmascript)");
-const _removetrailingslash = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/remove-trailing-slash.js [client] (ecmascript)");
-const _routeloader = __turbopack_context__.r("[project]/node_modules/next/dist/client/route-loader.js [client] (ecmascript)");
-const _script = __turbopack_context__.r("[project]/node_modules/next/dist/client/script.js [client] (ecmascript)");
-const _iserror = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/node_modules/next/dist/lib/is-error.js [client] (ecmascript)"));
-const _denormalizepagepath = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/page-path/denormalize-page-path.js [client] (ecmascript)");
-const _normalizelocalepath = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/i18n/normalize-locale-path.js [client] (ecmascript)");
-const _mitt = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/mitt.js [client] (ecmascript)"));
-const _utils = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/utils.js [client] (ecmascript)");
-const _isdynamic = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/is-dynamic.js [client] (ecmascript)");
-const _parserelativeurl = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/parse-relative-url.js [client] (ecmascript)");
-const _routematcher = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/route-matcher.js [client] (ecmascript)");
-const _routeregex = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/route-regex.js [client] (ecmascript)");
-const _formaturl = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/format-url.js [client] (ecmascript)");
-const _detectdomainlocale = __turbopack_context__.r("[project]/node_modules/next/dist/client/detect-domain-locale.js [client] (ecmascript)");
-const _parsepath = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/parse-path.js [client] (ecmascript)");
-const _addlocale = __turbopack_context__.r("[project]/node_modules/next/dist/client/add-locale.js [client] (ecmascript)");
-const _removelocale = __turbopack_context__.r("[project]/node_modules/next/dist/client/remove-locale.js [client] (ecmascript)");
-const _removebasepath = __turbopack_context__.r("[project]/node_modules/next/dist/client/remove-base-path.js [client] (ecmascript)");
-const _addbasepath = __turbopack_context__.r("[project]/node_modules/next/dist/client/add-base-path.js [client] (ecmascript)");
-const _hasbasepath = __turbopack_context__.r("[project]/node_modules/next/dist/client/has-base-path.js [client] (ecmascript)");
-const _resolvehref = __turbopack_context__.r("[project]/node_modules/next/dist/client/resolve-href.js [client] (ecmascript)");
-const _isapiroute = __turbopack_context__.r("[project]/node_modules/next/dist/lib/is-api-route.js [client] (ecmascript)");
-const _getnextpathnameinfo = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/get-next-pathname-info.js [client] (ecmascript)");
-const _formatnextpathnameinfo = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/format-next-pathname-info.js [client] (ecmascript)");
-const _comparestates = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/compare-states.js [client] (ecmascript)");
-const _islocalurl = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/is-local-url.js [client] (ecmascript)");
-const _isbot = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/is-bot.js [client] (ecmascript)");
-const _omit = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/omit.js [client] (ecmascript)");
-const _interpolateas = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/interpolate-as.js [client] (ecmascript)");
-const _disablesmoothscroll = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/disable-smooth-scroll.js [client] (ecmascript)");
-const _constants = __turbopack_context__.r("[project]/node_modules/next/dist/lib/constants.js [client] (ecmascript)");
+const _interop_require_default = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
+const _interop_require_wildcard = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [client] (ecmascript)");
+const _removetrailingslash = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/remove-trailing-slash.js [client] (ecmascript)");
+const _routeloader = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/client/route-loader.js [client] (ecmascript)");
+const _script = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/client/script.js [client] (ecmascript)");
+const _iserror = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/lib/is-error.js [client] (ecmascript)"));
+const _denormalizepagepath = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/page-path/denormalize-page-path.js [client] (ecmascript)");
+const _normalizelocalepath = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/i18n/normalize-locale-path.js [client] (ecmascript)");
+const _mitt = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/mitt.js [client] (ecmascript)"));
+const _utils = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/utils.js [client] (ecmascript)");
+const _isdynamic = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/is-dynamic.js [client] (ecmascript)");
+const _parserelativeurl = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/parse-relative-url.js [client] (ecmascript)");
+const _routematcher = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/route-matcher.js [client] (ecmascript)");
+const _routeregex = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/route-regex.js [client] (ecmascript)");
+const _formaturl = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/format-url.js [client] (ecmascript)");
+const _detectdomainlocale = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/client/detect-domain-locale.js [client] (ecmascript)");
+const _parsepath = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/parse-path.js [client] (ecmascript)");
+const _addlocale = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/client/add-locale.js [client] (ecmascript)");
+const _removelocale = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/client/remove-locale.js [client] (ecmascript)");
+const _removebasepath = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/client/remove-base-path.js [client] (ecmascript)");
+const _addbasepath = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/client/add-base-path.js [client] (ecmascript)");
+const _hasbasepath = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/client/has-base-path.js [client] (ecmascript)");
+const _resolvehref = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/client/resolve-href.js [client] (ecmascript)");
+const _isapiroute = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/lib/is-api-route.js [client] (ecmascript)");
+const _getnextpathnameinfo = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/get-next-pathname-info.js [client] (ecmascript)");
+const _formatnextpathnameinfo = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/format-next-pathname-info.js [client] (ecmascript)");
+const _comparestates = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/compare-states.js [client] (ecmascript)");
+const _islocalurl = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/is-local-url.js [client] (ecmascript)");
+const _isbot = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/is-bot.js [client] (ecmascript)");
+const _omit = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/omit.js [client] (ecmascript)");
+const _interpolateas = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/interpolate-as.js [client] (ecmascript)");
+const _disablesmoothscroll = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/disable-smooth-scroll.js [client] (ecmascript)");
+const _constants = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/lib/constants.js [client] (ecmascript)");
 let resolveRewrites;
 if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
 ;
@@ -3797,7 +3797,7 @@ class Router {
     async _bfl(as, resolvedAs, locale, skipNavigate) {
         if ("TURBOPACK compile-time truthy", 1) {
             if (!this._bfl_s && !this._bfl_d) {
-                const { BloomFilter } = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/bloom-filter.js [client] (ecmascript)");
+                const { BloomFilter } = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/bloom-filter.js [client] (ecmascript)");
                 let staticFilterData;
                 let dynamicFilterData;
                 try {
@@ -3817,39 +3817,25 @@ class Router {
                     return new Promise(()=>{});
                 }
                 const routerFilterSValue = ("TURBOPACK compile-time value", {
-                    "numItems": ("TURBOPACK compile-time value", 2),
+                    "numItems": ("TURBOPACK compile-time value", 5),
                     "errorRate": ("TURBOPACK compile-time value", 0.0001),
-                    "numBits": ("TURBOPACK compile-time value", 39),
+                    "numBits": ("TURBOPACK compile-time value", 96),
                     "numHashes": ("TURBOPACK compile-time value", 14),
                     "bitArray": ("TURBOPACK compile-time value", [
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 1),
                         ("TURBOPACK compile-time value", 0),
                         ("TURBOPACK compile-time value", 1),
                         ("TURBOPACK compile-time value", 0),
                         ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 1),
                         ("TURBOPACK compile-time value", 1),
                         ("TURBOPACK compile-time value", 0),
                         ("TURBOPACK compile-time value", 1),
                         ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 1),
-                        ("TURBOPACK compile-time value", 1),
                         ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 1),
                         ("TURBOPACK compile-time value", 1),
                         ("TURBOPACK compile-time value", 1),
                         ("TURBOPACK compile-time value", 0),
@@ -3860,11 +3846,82 @@ class Router {
                         ("TURBOPACK compile-time value", 1),
                         ("TURBOPACK compile-time value", 1),
                         ("TURBOPACK compile-time value", 0),
-                        ("TURBOPACK compile-time value", 1)
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 0),
+                        ("TURBOPACK compile-time value", 1),
+                        ("TURBOPACK compile-time value", 0)
                     ])
                 });
                 if (!staticFilterData && routerFilterSValue) {
-                    staticFilterData = ("TURBOPACK compile-time truthy", 1) ? routerFilterSValue : "TURBOPACK unreachable";
+                    staticFilterData = routerFilterSValue ? routerFilterSValue : undefined;
                 }
                 const routerFilterDValue = ("TURBOPACK compile-time value", {
                     "numItems": ("TURBOPACK compile-time value", 0),
@@ -4549,7 +4606,7 @@ class Router {
                     __N_SSP: res.mod.__N_SSP
                 }));
             if ("TURBOPACK compile-time truthy", 1) {
-                const { isValidElementType } = __turbopack_context__.r("[project]/node_modules/next/dist/compiled/react-is/index.js [client] (ecmascript)");
+                const { isValidElementType } = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/compiled/react-is/index.js [client] (ecmascript)");
                 if (!isValidElementType(routeInfo.Component)) {
                     throw Object.defineProperty(new Error(`The default export is not a React Component in page: "${pathname}"`), "__NEXT_ERROR_CODE", {
                         value: "E286",
@@ -4779,7 +4836,7 @@ class Router {
     }
 } //# sourceMappingURL=router.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/image-config.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/image-config.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4854,10 +4911,10 @@ const imageConfigDefault = {
     unoptimized: false
 }; //# sourceMappingURL=image-config.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/image-config-context.shared-runtime.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/image-config-context.shared-runtime.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -4868,18 +4925,18 @@ Object.defineProperty(exports, "ImageConfigContext", {
         return ImageConfigContext;
     }
 });
-const _interop_require_default = __turbopack_context__.r("[project]/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/react/index.js [client] (ecmascript)"));
-const _imageconfig = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/image-config.js [client] (ecmascript)");
+const _interop_require_default = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
+const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/react/index.js [client] (ecmascript)"));
+const _imageconfig = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/image-config.js [client] (ecmascript)");
 const ImageConfigContext = _react.default.createContext(_imageconfig.imageConfigDefault);
 if ("TURBOPACK compile-time truthy", 1) {
     ImageConfigContext.displayName = 'ImageConfigContext';
 } //# sourceMappingURL=image-config-context.shared-runtime.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/app-router-context.shared-runtime.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/app-router-context.shared-runtime.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
 'use client';
 "use strict";
 Object.defineProperty(exports, "__esModule", {
@@ -4915,8 +4972,8 @@ _export(exports, {
         return TemplateContext;
     }
 });
-const _interop_require_default = __turbopack_context__.r("[project]/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/react/index.js [client] (ecmascript)"));
+const _interop_require_default = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
+const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/react/index.js [client] (ecmascript)"));
 const AppRouterContext = _react.default.createContext(null);
 const LayoutRouterContext = _react.default.createContext(null);
 const GlobalLayoutRouterContext = _react.default.createContext(null);
@@ -4929,10 +4986,10 @@ if ("TURBOPACK compile-time truthy", 1) {
 }
 const MissingSlotContext = _react.default.createContext(new Set()); //# sourceMappingURL=app-router-context.shared-runtime.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/hooks-client-context.shared-runtime.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/hooks-client-context.shared-runtime.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$projectnlp$2f$LangStruct$2f$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
 'use client';
 "use strict";
 Object.defineProperty(exports, "__esModule", {
@@ -4968,7 +5025,7 @@ _export(exports, {
         return createDevToolsInstrumentedPromise;
     }
 });
-const _react = __turbopack_context__.r("[project]/node_modules/react/index.js [client] (ecmascript)");
+const _react = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/react/index.js [client] (ecmascript)");
 const SearchParamsContext = (0, _react.createContext)(null);
 const PathnameContext = (0, _react.createContext)(null);
 const PathParamsContext = (0, _react.createContext)(null);
@@ -4987,7 +5044,7 @@ if ("TURBOPACK compile-time truthy", 1) {
     NavigationPromisesContext.displayName = 'NavigationPromisesContext';
 } //# sourceMappingURL=hooks-client-context.shared-runtime.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/utils/as-path-to-search-params.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/as-path-to-search-params.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 // Convert router.asPath to a URLSearchParams object
@@ -5005,7 +5062,7 @@ function asPathToSearchParams(asPath) {
     return new URL(asPath, 'http://n').searchParams;
 } //# sourceMappingURL=as-path-to-search-params.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/router/adapters.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/adapters.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5037,13 +5094,13 @@ _export(exports, {
         return adaptForSearchParams;
     }
 });
-const _interop_require_wildcard = __turbopack_context__.r("[project]/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [client] (ecmascript)");
-const _jsxruntime = __turbopack_context__.r("[project]/node_modules/react/jsx-runtime.js [client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/node_modules/react/index.js [client] (ecmascript)"));
-const _hooksclientcontextsharedruntime = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/hooks-client-context.shared-runtime.js [client] (ecmascript)");
-const _utils = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/index.js [client] (ecmascript)");
-const _aspathtosearchparams = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/as-path-to-search-params.js [client] (ecmascript)");
-const _routeregex = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/router/utils/route-regex.js [client] (ecmascript)");
+const _interop_require_wildcard = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [client] (ecmascript)");
+const _jsxruntime = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/react/jsx-runtime.js [client] (ecmascript)");
+const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/react/index.js [client] (ecmascript)"));
+const _hooksclientcontextsharedruntime = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/hooks-client-context.shared-runtime.js [client] (ecmascript)");
+const _utils = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/index.js [client] (ecmascript)");
+const _aspathtosearchparams = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/as-path-to-search-params.js [client] (ecmascript)");
+const _routeregex = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/router/utils/route-regex.js [client] (ecmascript)");
 function adaptForAppRouterInstance(pagesRouter) {
     return {
         back () {
@@ -5142,7 +5199,7 @@ function PathnameContextProviderAdapter({ children, router, ...props }) {
     });
 } //# sourceMappingURL=adapters.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/lazy-dynamic/bailout-to-csr.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/lazy-dynamic/bailout-to-csr.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 // This has to be a shared module which is shared between client component error boundary and dynamic component
@@ -5180,7 +5237,7 @@ function isBailoutToCSRError(err) {
     return err.digest === BAILOUT_TO_CSR;
 } //# sourceMappingURL=bailout-to-csr.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/error-source.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/error-source.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5217,7 +5274,7 @@ function decorateServerError(error, type) {
     });
 } //# sourceMappingURL=error-source.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/normalized-asset-prefix.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/normalized-asset-prefix.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5246,7 +5303,7 @@ function normalizedAssetPrefix(assetPrefix) {
     return `/${escapedAssetPrefix}`;
 } //# sourceMappingURL=normalized-asset-prefix.js.map
 }),
-"[project]/node_modules/next/dist/shared/lib/format-webpack-messages.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/shared/lib/format-webpack-messages.js [client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 "use strict";
 
 /**
@@ -5280,8 +5337,8 @@ Object.defineProperty(exports, "default", {
         return formatWebpackMessages;
     }
 });
-const _interop_require_default = __turbopack_context__.r("[project]/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
-const _stripansi = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/next/dist/compiled/strip-ansi/index.js [client] (ecmascript)"));
+const _interop_require_default = __turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
+const _stripansi = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/projectnlp/LangStruct/landing-page/node_modules/next/dist/compiled/strip-ansi/index.js [client] (ecmascript)"));
 // This file is based on https://github.com/facebook/create-react-app/blob/7b1a32be6ec9f99a6c9a3c66813f3ac09c4736b9/packages/react-dev-utils/formatWebpackMessages.js
 // It's been edited to remove chalk and CRA-specific logic
 const friendlySyntaxErrorLabel = 'Syntax error:';
@@ -5407,4 +5464,4 @@ function formatWebpackMessages(json, verbose) {
 }),
 ]);
 
-//# sourceMappingURL=node_modules_next_dist_shared_lib_82dc2e9d._.js.map
+//# sourceMappingURL=91b6b_next_dist_shared_lib_b8932d45._.js.map
