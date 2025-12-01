@@ -76,8 +76,8 @@ def get_irregulars(filename="irregular_verbs.txt"):
                     continue
                 k, v = line.split(":", 1)
                 out[k.strip().lower()] = v.strip().lower()
-    except:
-        pass
+    except FileNotFoundError:
+        print("irregular_verbs.txt not found")
     return out
 
 def conjugate(verb, irregulars):
