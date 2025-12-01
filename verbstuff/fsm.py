@@ -1,3 +1,15 @@
+# conjugator.py
+
+def list_all_verbs():
+    all_verbs = []
+    try:
+        with open("words.txt", 'r') as f:
+            for line in f:
+                all_verbs.append(line.strip())
+    except FileNotFoundError:
+        print("Words.txt not found")
+    return all_verbs
+
 def vowel(ch):
     return ch.lower() in "aeiou"
 
@@ -7,22 +19,18 @@ def clean_word(w):
 def is_cvc(word):
     if len(word) < 3:
         return False
-
     c1, v, c2 = word[-3], word[-2], word[-1]
     return (not vowel(c1)) and vowel(v) and (not vowel(c2))
-
 
 def ends_with_double_vowel_cons(word):
     if len(word) < 3:
         return False
     return vowel(word[-3]) and vowel(word[-2]) and not vowel(word[-1])
 
-
 def ends_with_vowel_cons(word):
     if len(word) < 2:
         return False
     return vowel(word[-2]) and not vowel(word[-1])
-
 
 def conjugate_regular(verb):
     v = verb.lower()
@@ -59,57 +67,21 @@ def conjugate_regular(verb):
     # DEFAULT
     return v + "ed"
 
-
-def irregular_verbs(filename):
+def get_irregulars(filename="irregular_verbs.txt"):
     out = {}
     try:
         with open(filename, "r") as f:
             for line in f:
-                line = line.strip()
-                if not line or ":" not in line:
+                if ":" not in line:
                     continue
-
                 k, v = line.split(":", 1)
-                k = k.strip().strip('"\'').lower()
-                v = v.strip().strip('"\'').lower()
-
-                if k:
-                    out[k] = v
-    except FileNotFoundError:
-        print(f"Error: irregular verb file '{filename}' not found.")
-        return {}
-
+                out[k.strip().lower()] = v.strip().lower()
+    except:
+        pass
     return out
 
-
-def main():
-    irregular = irregular_verbs("irregular_verbs.txt")
-    results = []
-
-    with open("words.txt", "r") as f:
-        for raw in f:
-            word_raw = clean_word(raw)    # remove whitespace + quotes
-            word = word_raw.lower()
-
-            if not word:
-                continue
-
-            # ----- IRREGULAR CHECK FIRST -----
-            if word in irregular:
-                past = irregular[word]
-                print(f"{word_raw} -> {past} (irregular)")
-                results.append(past)
-                continue
-
-            # ----- REGULAR RULES -----
-            past = conjugate_regular(word)
-            print(f"{word_raw} -> {past}")
-            results.append(past)
-
-    print("\nFINAL LIST:")
-    print(results)
-    return results
-
-
-main()
-
+def conjugate(verb, irregulars):
+    verb = verb.lower()
+    if verb in irregulars:
+        return irregulars[verb]
+    return conjugate_regular(verb)
