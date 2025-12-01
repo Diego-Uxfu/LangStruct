@@ -3,18 +3,10 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import random
 
+from starlette.middleware.cors import CORSMiddleware
+
 #file import
-from fsm import *
-
-app = FastAPI()
-
-
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
-import random
-
-from fsm import *
+from verb_fsm import *
 
 app = FastAPI()
 
