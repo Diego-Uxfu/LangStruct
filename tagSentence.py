@@ -38,7 +38,7 @@ def word2features(sent, i):
         'word.endswith_ed': word_lower.endswith('ed'),
         'word.endswith_ing': word_lower.endswith('ing'),
 
-# 2-Grams
+        #     2-Grams
         'char_2gram_prefix': word_lower[:2] if len(word_lower) >= 2 else '',
         'char_2gram_suffix': word_lower[-2:] if len(word_lower) >= 2 else '',
         
