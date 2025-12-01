@@ -18,13 +18,19 @@ class CheckSentence:
             NP -> 'NOUN'
             NP -> 'DET' 'ADJ' 'NOUN' 'NOUN'
             NP -> 'DET' 'NOUN' 'NOUN'
-
+            #recursive NP
+            NP -> NP PP 
             # --- Verb Phrases (VP) ---
             VP -> 'VERB'            
             VP -> 'VERB' NP
             VP -> 'VERB' PP
             VP -> 'VERB' NP PP
             VP -> 'VERB' ADV
+                                      
+                                      
+            #recursive VP
+            VP -> VP PP
+                                      
 
             # --- Prepositional Phrases (PP) ---
             PP -> 'ADP' NP 
