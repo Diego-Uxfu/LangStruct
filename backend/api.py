@@ -62,8 +62,10 @@ def analyze():
 
 
     # 3. Check Validity using your CFG script
+    print(text)
+    print (tags)
 
-    is_valid = checker.check(list(tags))
+    is_valid = checker.check(tags)
     
     # 4. Prepare data for Frontend
     words = text.split()
@@ -104,7 +106,7 @@ def check_answer():
     user_input = data.user_answer.strip().lower()
     correct = conjugate(verb, irregulars)
     print(correct)
-    correct = correct.strip().strip('"').strip("'").strip(',').strip().strip('"')
+    correct = correct.replace('"', '').replace("'", '').replace(',', '')    
     correct.lower()
     print(user_input+ " " + correct)
 

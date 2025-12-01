@@ -28,9 +28,19 @@ class SentenceGenerator:
 
             ['DET', 'NOUN', 'VERB', 'ADV'],
 
-            ['DET', 'NOUN', 'VERB', 'PREP', 'DET', 'NOUN'],
+            ['DET', 'NOUN', 'VERB', 'ADP', 'DET', 'NOUN'],
             
-            ['DET', 'NOUN', 'VERB', 'ADV'],
+            ['DET', 'NOUN', 'ADP', 'DET', 'NOUN', 'VERB'],
+            
+            ['DET', 'NOUN', 'VERB', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN'],
+
+            ['DET', 'NOUN', 'VERB', 'DET', 'NOUN', 'ADV'],
+
+
+            ['ADJ', 'NOUN', 'VERB', 'ADP', 'DET', 'NOUN'],
+
+        
+            ['NOUN', 'VERB', 'ADP', 'DET', 'NOUN', 'ADV'],
         ]
 
     def get_word(self, pos_tag):

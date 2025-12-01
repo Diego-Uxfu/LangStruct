@@ -11,6 +11,10 @@ class CheckSentence:
             S -> NP VP PP
             S -> NP VP ADV
 
+            S -> NP VP
+            S -> NP VP PP
+            S -> NP VP ADV
+
             # --- Noun Phrases (NP) ---
             NP -> 'DET' 'NOUN'
             NP -> 'DET' 'ADJ' 'NOUN'
@@ -18,24 +22,31 @@ class CheckSentence:
             NP -> 'NOUN'
             NP -> 'DET' 'ADJ' 'NOUN' 'NOUN'
             NP -> 'DET' 'NOUN' 'NOUN'
-            #recursive NP
+            NP -> 'PRON'
+            NP -> 'PRON' 'NOUN'            
+            NP -> 'PRON' 'ADJ' 'NOUN'
+
+                                      
             NP -> NP PP 
+            
             # --- Verb Phrases (VP) ---
             VP -> 'VERB'            
             VP -> 'VERB' NP
             VP -> 'VERB' PP
             VP -> 'VERB' NP PP
-            VP -> 'VERB' ADV
+            VP -> 'VERB' 'ADV'
+            VP ->  'ADV'  'VERB'                                    
                                       
-                                      
-            #recursive VP
+            #recursive VP 
             VP -> VP PP
                                       
 
             # --- Prepositional Phrases (PP) ---
+
             PP -> 'ADP' NP 
 
             # --- Adverb (ADV) ---
+
             ADV -> 'ADV'
             """)
             
@@ -47,6 +58,8 @@ class CheckSentence:
         Input: tags = list of POS tags, e.g. ['DT','JJ','NN','VB']
         Output: True if sentence can be parsed by CFG, False otherwise
         """
+        print(tags)
+        
         try:
             for tree in self.parser.parse(tags):
                 return True  # at least one parse exists
