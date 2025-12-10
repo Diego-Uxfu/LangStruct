@@ -1,4 +1,6 @@
 {
+  "/lesson/page": "app/lesson/page.js",
   "/page": "app/page.js",
+  "/sentence/page": "app/sentence/page.js",
   "/verb_lesson/page": "app/verb_lesson/page.js"
 }
