@@ -1,0 +1,6 @@
+this file explains what each file does
+api.py exposes the cfg/crf tagger/grader fsms/ generator fsm to the frontend to be called
+trainmodel.py trains our crf model for pos taghing using the penn treebank dataset+our own data
+uses featurws such as bi and trigrams along with word endings +lemmas+default geeks4geeks featurss
+cfg.py is a cfg tjay we use to grade the output from the pos tagger to make sure tjay its a valid sentence
+fsm.py generates scrambled sentences for the user to move around 
